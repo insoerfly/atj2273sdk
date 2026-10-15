@@ -66,6 +66,14 @@ make -C sdk/case/makefile libs      # собрать библиотеки + laun
 | `multiple definition of pthread_mutex_type_t` и т.п. | Старые заголовки используют common-символы; GCC≥10 `-fno-common` | `-fcommon` |
 | `Makefile:NN: *** missing separator` | Файлы в CRLF | перевести в LF |
 | `linking abicalls files with non-abicalls files` (warning) | то же (abicalls) | `-mno-abicalls` |
+| `sde-ld: libX.a: error adding symbols: bad value` (напр. `coverflow.a` у `music`) | старые объекты в `.a` не принимаются новым `ld` | `bash tools/normalize-archives.sh` (в репо уже применено) |
+
+**Статус сборки (проверено из чистого клона на Ubuntu 24.04, `mipsel-linux-gnu-gcc` 12.4 / `ld` 2.42):**
+
+- OK: `libsrc/{applib,style,fusion,loop}`, `apps/{commonui,msg_server,config,process_manager,usb}`,
+  `apps/desktop/{launcher,setting,music,stopwatch,recorder,photo}` — собираются.
+- В репозитории вендорские `.a` уже нормализованы (`tools/normalize-archives.sh`), чтобы
+  `ld` принимал их и `music` линковался.
 
 ## 5. Сборка образа и прошивка (справочно)
 
