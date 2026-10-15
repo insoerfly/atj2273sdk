@@ -1,0 +1,1807 @@
+00000093 <ZZ)5
+000000F5 `k5!`
+000000FF <%H"
+000001F4 ActBrm
+00000306 c$!(
+00000332 c$!H+
+000003D3 5$Hl
+000003DB <%(*
+00000603 <%(*
+00000802 c$!@
+00000877 <pAe
+00000963 <!x$
+00000C72 C%B2
+00000F8E B$lA"
+00001049 Fp$@
+0000108E g5$(
+0000109F <%@*
+00001348 4A0&
+00001353 <!hp
+0000140B $'H 
+000014BF $$HI
+000014C7 $%HI
+000014F3 $$H6
+000014FB $%H*
+0000152A J5%HI
+00001543 $$H*
+0000155B <$X*
+00001563 $%HK
+0000157E J5$PI
+0000158A )5%PI
+000015A7 <%PI
+000015D7 <$X*
+000015DF 4%HK
+000015F7 $%H*
+00001623 <%PI
+000016F3 $$H*
+0000171B $%H*
+00001747 <$H*
+00001793 <%H*
+00001837 $$HI
+000018FC ""b4""b4""b5""r5"2
+00001E94 SPEAKER_ON
+00001FFD Uc]storage.bin
+0000201F )brecf03.bin
+0000203C ^6W/upg.bin
+00002060 welcome.bin
+0000207F Gfb.bin
+000020A0 TEST16.BIN
+000020C0 mfp.bin
+000020E0 card.bin
+00002100 key.bin
+0000211C kR]Elcd.bin
+0000213F Dshutoff.bin
+0000215D PGXstartup.bin
+0000217F Nupg_lcd.bin
+00002443 <hVB$
+00002747 '! @
+00002767 <@OD$
+0000276F <0OE$x
+0000279F '! @
+000027BB '! @
+000027D7 <lOD$
+000027DF <0OE$
+00002861 OB$!
+00002926 B$! @
+0000294E B$! @
+0000298B <hVD$@
+000029A3 <hVD$
+000029AD VE$(
+000029D7 <S0c4
+00002A5F $!0b
+00002A73 $! b
+00002ACF $!0b
+00002AE3 $! b
+00002E27 <PVP$
+00002E3F <PVB$
+00002E7B $PVb
+00002EFB <PVB$
+00002F0F <PVB$
+00002F8B <PVD$8
+00002FAE B0! @
+00002FB7 <XVE$
+00002FDF '! @
+00002FF6 B0! @
+0000302B '! @
+0000309F <PVC
+000030B7 <PVB
+0000311B '! @
+00003123 <XVE$
+0000314F <`PD$
+00003157 <LPE$
+00003177 <LPE$
+00003193 '! @
+000031A3 '! @
+000031D3 <PVB$
+000031E3 <PVB
+00003227 '! @
+0000324F <LPE$
+000032CF <PVC
+00003305 PE$2
+00003323 <PVB
+0000332F '! @
+00003359 PE$:
+00003387 <PVB$
+00003397 '! @
+000033B7 <8QD$
+000033C1 PE$J
+000033EB $PVb
+00003447 <PVC
+00003473 <|QD$
+0000347B <hQE$h
+000034AF <PVD$ 
+000034E6 B0! @
+0000386B '! @
+0000388B '! @
+000038AB <hRD$
+000038B3 <XRE$d
+000038DD VD$!(`
+00003901 RD$!(`
+00003933 <XRE$w
+00003969 VC$R
+00003AB3 <LVB
+00003BC3 <0SE$
+00003C63 <LVB
+00003C8F <LVB
+00003CC7 <0SE$
+00003DE7 <DSE$D
+00003E66 B0! @
+00003E8E B0! @
+00003EB6 B0! @
+00003EDE B0! @
+00003F06 B0! @
+00003F3E B0! @
+00003F93 <8VB
+00003FB7 <8VB
+00003FC7 <dSD$
+00003FCF <XSE$C
+00004027 <8VB
+00004037 <8VD
+00004193 <8VB
+000041CF '!(b
+00004513 <8VB
+0000455F '!(b
+000048DB <<VB$
+00004A3B <<VC$
+00004A5B <<VC$
+00004AA7 <<VC$
+00004AE7 <<VC$
+00004B37 <<VC$
+00004B77 <<VC$
+00004C5F <<VB
+00004CA7 <<VB$
+00004CBF <<VB$
+00004CDF <<VB$
+00004CF7 <<VB$
+000050DA B0! @
+000050FE B0! @
+00005112 B0! @
+000053DF <<VB$
+00005403 <<VC$
+0000541B <<VC$
+0000544B <<VB$
+000054B7 <|TD$
+000054BF <dTE$
+00005733 <<VB$
+0000589B $!(@
+000059AB <|TD$
+00005B5B <<VB$
+00005C15 Te$j
+00005C1B $!8@
+00005FE3 <TUD$
+0000606E B0! @
+000066F6 c44VC
+0000670E c44VC
+0000683A c44VC
+00006852 c44VC
+000068AF <! @
+00006A53 <! @
+00006E47 <tUE$
+00006E9F <tUE$<
+00006F5D UD$!(`
+00006FD9 UD$!(`
+00007009 UD$!(`
+000070E1 VE$z
+00007314 [Storage] (SNOR) Drv entry
+00007330 phy_operation
+00007340 %s() %d: spinor_phy_erase() return error!
+0000736C %s() %d: function number error!
+000073D4 logic_open
+000073E0 %s() %d no enough memory!
+000073FC logic_exit
+00007408 logic_sector_read
+0000741C %s() %d error! spinor_phy_read return 0x%x 
+0000744C full_fill_context
+00007460 %s() %d error! cpy_bitmap return 0x%x 
+00007488 ERROR! %s() %d
+00007498 %s() %d error!  spinor_phy_read return 0x%x
+000074C8 flush_context
+000074D8 %s() %d error! full_fill_context return 0x%x
+00007508 %s() %d error! spinor_phy_erase return 0x%x
+00007538 %s() %d error! spinor_phy_write return 0x%x
+00007568 logic_sector_write
+0000757C %s() %d error! flush_context return 0x%x
+000075A8 logic_read
+000075B4 %s() %d invalid param ! buff is NULL!
+000075DC %s() %d error! ret = 0x%x
+000075F8 logic_write
+00007604 get_spinor_cap
+00007614 %s() %d spinor_phy_info.logic_cap = 0x%x
+00007640 spinor_phy_read_chipid
+00007658 spinor_phy_init
+00007668 %s() %d: read id error 
+00007684 SPINOR ID ----------------: 0x%x.%x.%x
+000076AC %s() %d: random_init error 
+000076CC spinor_phy_exit
+000076DC spinor_phy_read
+000076EC %s() %d: invalid arg
+00007704 %s() %d: spinor_hal_sec_read return 0x%x
+00007730 spinor_phy_write
+00007744 spinor_phy_erase
+00007758 random_init
+00007764 %s() %d error: no enough memory!
+000077A8 spinor_hal_init
+000077B8 spinor_hal_exit
+000077C8 spinor_hal_get_device
+000077E0 %s() %d pin_pad_config error!
+00007800 spinor_hal_release_device
+0000781C spinor_hal_read_chipid
+00007834 spinor_hal_wait_nor_ready
+00007850 spinor_hal_set_freq
+00007864 spinor_hal_sec_write
+0000787C %s() %d: buff is null while read 0x%x, sec 0x%x
+000078B0 spinor_hal_sec_read
+000078C4 spinor_hal_block_erase
+000078DC %s() %d erase cmd (0x%x) error!
+00007900 %s()% d:  _spinor_write_enable error
+00007928 spinor_hal_chip_erase
+00007940 spinor_hal_clear_bp
+00007954 Hardware error! check wp pin
+00007974 dbg_dump_mem
+00007984 %s: not support group
+0000799C %s: mem_addr must be align by %d bytes!
+000079CC %08x: 
+000079D4 %02x 
+000079DC %04x 
+000079E4 %08x 
+000079EC dump_mem: not support mode
+00007A08 init_storage_info
+00007A1C %s() %d invalid arg
+00008A83 $!(Q
+00008BBF <!(*
+00008EC6 ''!(
+00008F2E '&!(
+0000920F T!  
+0000921E &U!  
+000092A7 $!  
+000094FA +*$0r
+00009532 +*$0r
+000095E2 B-$8"
+00009602 g%!(
+00009673 .$xB
+000096FD ('r!
+000097AF r!Xl
+000097EF r!0h
+00009873 r! i
+000098D7 '!  
+00009AA1 U(5& 
+00009AB3 ,%0C
+00009B1B <43&'! 
+00009BB6 "5$0
+00009CEB $!(`
+00009D27 $!(`
+00009D77 $!(`
+00009E8B $!(`
+00009EB3 0!0B
+00009EC7 $!(`
+00009EEF $!XB
+00009F2F '! `
+0000A0AF $!0@
+0000A5AA HT! 
+0000A5EF $$HK
+0000A63A IT! 
+0000AA2E u%!(
+0000AC33 5$ "
+0000B50E s&!H
+0000B82A s&!H
+0000BB87 $!8 
+0000BBFA d$!(
+0000BD9F <$ K
+0000BDE9 b(5!0
+0000BE92 ,'! 
+0000BF1E F$!8
+0000C3A7 $! @
+0000C53F $! @
+0000C71B $#HF
+0000C7F2 I%+ 
+0000C9EE c$!8
+0000CB22 J%!H
+0000CC42 k%!8%
+0000CC4E j-!H
+0000CC6E c$!8
+0000CD12 %5! 
+0000D1BF '!( 
+0000D1EE s&!  
+0000D2B3 $! @
+0000D30F <!  
+0000DB77 <! `
+0000DCC2 &-%(
+0000E016 I9+@
+0000E5EB 0#PO
+0000E67A D%!(/
+0000E6CF 0#PB
+0000E6FA J%+0D
+0000E7DF <+@p
+0000E84E "&#@p
+0000E903 <+@p
+0000E90E B&+(h
+0000E9DB <+@p
+0000EAE3 $!(@
+0000EC32 I%!(
+0000F05E 1&$ 
+0000F256 1&+('
+0000F2DA E&!8`
+0000F34E b:$@
+0000F412 1&$p
+0000F96F %!Pc
+0000F9FE H&! 
+0000FAE3 2!8f
+0000FD4E 1&+H$
+00010032 1&+0$
+0001004A 53# '
+000100CF $!@@
+0001020B $+($
+0001022E 1&+P$
+0001029B %!8`
+000105B2 c$+`
+0001072E )%!h
+0001077A J%+HF
+0001086E @TB 
+0001091A )%!0/
+00010A8F $$XX
+00010C4B '!( 
+00010C9F p! `
+0001108A 2&!@0
+0001155A I5$8
+000115CE I5$8
+0001168B $! @
+000116B3 $! @
+000116EA s$!0`
+000118FA q$!  
+0001190B $! @
+00011943 $!(p
+000119DF $&pI
+000119F7 }!x+
+00011FD3 $&pI
+00011FEB }!x+
+00012616 %% N
+00012713 '! @
+0001275B '! @
+000127C7 <@Bb4
+0001286B 5!8 
+000128FB 4!  
+0001293F 4$@C
+0001296B <$(l
+00012C37 %!( 
+00012D5B ,!( 
+00012D7E c1!@
+00012DA7 $$Xj
+00012DEE */#8
+00012EAF $*`C
+00012ECA E%! 
+00012EF7 $!8`
+000130DB %!HK
+00013253 $$HK
+000132A2 16D,
+000132E2 4%! 
+0001336A t%!(
+000134C3 $$0t
+00013FBC module_entry
+0001404D  n;^
+0001410D Qkkbal
+0001421B i]Wb
+0001435B 9a&g
+00014364 MGiI
+00014369 wn>Jj
+000143AB #.zf
+000143B9 +o*7
+00014CF4  inflate 1.2.3 Copyright 1995-2005 Mark Adler 
+00014E56 Ds"8
+00014E62 78?$
+00014E99  iciNWq
+00014EEC `\`U'K1
+00014F0D ~&jE
+00014F41 S2zw
+00014FDA Qjh/T
+00015094 yr,@
+000150F0 H{1S
+0001522C AJsN
+00015249 "//w
+00015293 n!ec
+0001542C [BOOT] restore_LFIHead_DIRItem error
+00015454 [BOOT] check_mbrc1st fail
+00015470 [BOOT] check_mbrc2st fail
+0001548C [BOOT] check_brec fail
+000154A4 [BOOT] the %dth mbrec phy blk flag =%d
+000154CC [BOOT] storage_entry fail
+000154E8 [BOOT] check_mbrc fail
+00015500 [BOOT] NOW ENTER ADFU
+00015518 [BOOT] Standby_ONOFF_CTL_WK:0x%x
+0001553C [BOOT] RunModeTest :ENTER POWER OFF
+00015564 [BOOT] WILL DISABLE_KERNEL_PRINT
+00015588 [BOOT] NOW ENTER LOCK
+000155A0 lock_pic.bin
+000155B0 [BOOT] WILL ENTER STUB
+000155C8 boot_pic.bin
+000155D8 [BOOT] fwinfo.bin crc err
+000155F4 fwinfo.bin
+00015600 [BOOT] usb_print fwinfo.bin crc err
+00015628 syscfg.sys
+00015634 sm.drv
+0001563C mfp_cfg.bin
+00015648 gpio_cfg.bin
+00015658 [BOOT] disp_inited_in_boot=%d
+00015678 [BOOT] enter shutoff
+00015690 lpow_pic.bin
+000156A0 [BOOT] show low pwer pic
+000156BC upg_pic.bin
+000156C8 [BOOT] load UPGLOADER_INDEX err
+000156EC [BOOT] cfg boot2kernel_info.init_param.usb_print=%d
+00015724 [BOOT] atf check boot2kernel_info.init_param.usb_print=%d
+00015760 [BOOT] copy param for kernel, and go...
+0001578C [BOOT] NULL2
+0001579C [BOOT] NULL3
+000157AC [BOOT] NULL3 id=%d
+000157C0 [BOOT] NULL4 id = %d
+000157D8 [BOOT] NULL1
+000157E8 [BOOT] check_sum old bin err
+00015808 [BOOT] NULL3,old bin
+00015820 [BOOT] NULL4
+00015830 [BOOT] OLD NULL1
+00015844 [BOOT] load UPGLOADER_INDEX
+00015864 err_no = 0x00000000
+0001587C brec_entry.c
+0001588C [BOOT] %s %s %s %s %d
+000158A4 Jun  8 2012
+000158B0 14:58:27
+000158BC [BOOT] %s %s
+000158CC [BOOT] boot_size = %d
+000158E4 [BOOT] nand inithw ok
+000158FC [BOOT] nand boot's page size 0x%x in sectors
+0001592C [BOOT] load NAND_RR_INDEX err
+0001594C [BOOT] upg success, reset
+00015968 [BOOT] upg err %d
+00015980 failed gzclose
+00015994 1.2.3
+000159A0 invalid literal/length code
+000159BC invalid distance code
+000159D4 invalid distance too far back
+000159F4 invalid literal/lengths set
+00015A10 incorrect length check
+00015A28 invalid stored block lengths
+00015A48 header crc mismatch
+00015A5C invalid code lengths set
+00015A78 incorrect data check
+00015A90 too many length or distance symbols
+00015AB4 unknown compression method
+00015AD0 incorrect header check
+00015AE8 invalid window size
+00015AFC unknown header flags set
+00015B18 invalid distances set
+00015B30 invalid bit length repeat
+00015B4C invalid block type
+00015B60 [BOOT] %d,restore_zlf:%s
+00015B80 [BOOT] %d,fwrite:%d
+00015B98 <none>
+00015BA0 <corrupt>
+00015BAC __bcomprtab
+00015BB8 [BOOT] %d,fwrite:%d, segment align
+00015BDC [BOOT] %d,ftell:%d
+00015BF0 [BOOT] sh_addr_align:%d
+00015C0C __chksum
+00015C24 need dictionary
+00015C34 stream end
+00015C40 file error
+00015C4C stream error
+00015C5C data error
+00015C68 insufficient memory
+00015C7C buffer error
+00015C8C incompatible version
+00015CA4 something wrong, enter shutoff
+00015CC4 err_pic.bin
+00015CD0 printbuf overflow!
+00015CE4 dump_mem: not support mode
+00015D00 dump_mem: startaddr must be align by %d bytes!
+00015D30 startaddr %p, size %d, count %d, count_per_line %d
+00015D65 %08x: 
+00015D6C %04x 
+00015D74 %08x 
+00015D7C %02x 
+00015D84 0123456789abcdefghijklmnopqrstuvwxyz
+00015DAC 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+00015DD4 <NULL>
+00016010 /mnt/udisk/
+00016040 MBI D`a
+000161A6 actions
+000161AE media-player
+000161BE 1234567887654321
+00016204  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+00016284  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+00016733 <t+D$
+0001676F <PGB
+00016AD9 +D$D
+00016B2D +D$8
+00016B9D ,D$!(`
+00016C17 <$,D$!(`
+00016C47 <,,D$!(`
+00016C73 <4,D$
+00016CBB <<,D$
+00016DDF <@,D$(
+00016E6B <l,D$B
+00016E73 <\,E$
+00016E97 <T+E$
+00017085 -D$B
+00017157 <p-D$!(`
+000171A3 <x-D$B
+000171AB <d-E$
+000173A5 -D$B
+000173AD -E$W
+000173D1 -D$8
+000173F9 -D$8
+00017409 .D$B
+00017411 -E$_
+0001743F <(.D$B
+00017449 -E$e
+00017533 <LGB
+00017663 <LGB
+0001781B <LGB
+00017863 <H.E$
+0001796E B$! @
+00017977 <`GE$
+00017A03 <\.D$!(`
+00017B13 <t.D$!(`
+00017B1F <L.F$!
+00017B42 B$! @
+00017B4B <`GE$
+00017B8F <t.D$!(`
+00017B9B <L.F$'
+00017C7D .D$B
+00017C83 <L.E$>
+00017DC1 .D$B
+00017DC9 .E$x
+00017DEB <d+E$
+00017E11 .D$B
+00017E79 .D$B
+000180F5 /D$B
+000180FD .E$&
+0001810F <,/D$B
+00018119 .E$*
+0001814E B$! `
+0001816B <hGB$! `
+00018186 B$! @
+000181BB <L/D$!(`
+000181C9 .F$2
+0001858F <\GD
+0001881F <,0D$
+000188C3 <H0D$
+00018977 <h0D$
+00018C43 <h0D$
+00018D83 <,1D$
+00018E2B <X1D$B
+00018E33 <L1E$Q
+00018E56 B$! @
+00018E5F <t1E$
+00018FA5 1D$B
+00018FAB <|1E$
+00019077 $! @
+000191FD 1D$(
+00019235 1D$$
+0001931E B$! `
+00019401 1D$$
+0001955D 1D$(
+00019B26 B$! @
+00019BE1 2D$B
+00019C45 tB$@
+00019C4F <(2D$B
+00019D17 $! @
+00019E13 <D2E$
+00019E4F <P2D$
+00019E6F $! @
+0001A0B7 <|HB
+0001A0E7 <|HB$
+0001A123 <|HB$
+0001A15F <|HB$
+0001A2E3 <|HB
+0001A32B <|HB$
+0001A459  C$B
+0001A466 B$! `
+0001A503 <TGB
+0001A5DF <TGB
+0001A727 <t2D$
+0001A733 <h2F$
+0001A7A7 <UUB4
+0001A89D 1D$B
+0001A8B5 2D$8
+0001AA15 GD$@
+0001AA26 F$!8`
+0001AAC7 <03D$B
+0001AAD1 2E$c
+0001AAEB <|HD$B
+0001AAF3 <LHE$
+0001AB0B <HGC
+0001AB26 B$! @
+0001AB2F <|HE$B
+0001AB37 <LHF$F
+0001AB77 <P3D$
+0001AC03 <h3D$
+0001AC77 $! `
+0001AD23 <|3D$
+0001AD65 GC$B
+0001AD6D 3D$B
+0001AE89 3D$ 
+0001B1E9 4D$!(`
+0001B221 4D$!(`
+0001B289 1D$B
+0001B28F <04E$
+0001B29F <<4D$8
+0001B316 B$! @
+0001B333 <LHB$B
+0001B43B <L4D$
+0001B44B <d4D$8
+0001B463 <|HE$B
+0001B46B <LHF$
+0001B4B7 <|4D$
+0001B519 4D$8
+0001B5A5 4D$8
+0001B631 4D$8
+0001B6BD 4D$8
+0001B6E3 <|HB$B
+0001B705 GC$c
+0001B713 <\GB
+0001B723 <\GD
+0001B791 GC$d
+0001B7A1 GC$B
+0001B7A9 3D$B
+0001B7AF <04E$
+0001B7C9 4D$LGe
+0001B7E1 5D$PGe
+0001B7F7 <05D$TGe
+0001B80B <T5D$8
+0001B867 <p5D$
+0001B873 <d5F$
+0001B9F3 <dGB
+0001BAC7 <dGD
+0001BB1F <dG@
+0001BB2F <\GB
+0001BB3F <\GD
+0001BB83 <`GB$
+0001BBAB <`GB
+0001BBB9 5D$B
+0001BBD7 <hGB$
+0001BC01 .D$B
+0001BC23 $dGF
+0001BC3B 'dGE
+0001BC51 5D$B
+0001BCEB $dGF
+0001BCFB <dGB
+0001BD07 <LHD$!(`
+0001BD1B <LHB$ 
+0001BDC7 <86D$
+0001BDE7 <X6D$
+0001BDF7 <dGB
+0001BE03 <LHD$!(`
+0001BE1B <LHB$ 
+0001BE2F <dGB
+0001BE4B <LHB$
+0001BE5F <dGB
+0001BE7F <|6D$
+0001BEB7 <dGB
+0001BEC9 6D$!(`
+0001BF23 <$7D$
+0001BF33 <D7D$B
+0001BF3D 7E$0
+0001BF4F <HGD
+0001BF57 <`7E$0
+0001BF7B <l7D$
+0001BF9F <HGC
+0001BFFD GD$!(
+0001C025 GD$!(
+0001C03B <HGC
+0001C055 7D$!(
+0001C07A D$!(
+0001C08F <\GB
+0001C0C9 7D$\Ge
+0001C0F1 8D$\Ge
+0001C127 <\GD
+0001C15F <,8D$
+0001C1CB <H8D$
+0001C223 <\GB
+0001C233 <HGC
+0001C249 7D$S3
+0001C257 <\GD
+0001C267 <`7D$
+0001C287 <`8D$
+0001C3F3 <HGB
+0001C49B <HGB
+0001C737 <$7D$
+0001C747 <HGD
+0001C74F <`7E$(
+0001C773 <l7D$
+0001C799 8D$!(
+0001C80B <\GB
+0001C81B <\GD
+0001C82B <`7D$
+0001C853 <`8D$
+0001C8C7 <HGD
+0001C8CF <`7E$0
+0001C905 8D$!(
+0001C93D 8D$!(
+0001C9B3 <\GB
+0001C9C3 <\GD
+0001C9D3 <`7D$
+0001C9FB <`8D$
+0001CAC3 <HG@
+0001CC07 '! @
+0001CC1B <LHC$B
+0001CC9D UB4A
+0001CCAB <HG@
+0001CD8D 9D$(
+0001CDB7 <ZZB4
+0001CDCC $9D$B
+0001CDDB <T9D$
+0001CE10 x9D$B
+0001CE1F <T9D$
+0001CE3D 9D$B
+0001CE43 <|6D$$
+0001CE5D 6D$0
+0001CE8F <LHC$B
+0001CF4B <|dc$
+0001CF6F <$ec$
+0001D021 9D$'
+0001D06F <|dc$
+0001D0C1 9D$8
+0001D0F3 <LHB$
+0001D139 9E$B
+0001D141 :D$@
+0001D210 (:D$
+0001D21F <\GB
+0001D327 <%H!
+0001D34F $$H!
+0001D3BA !4$H!
+0001D4F9  B4%
+0001D8CE B4! @
+0001DAA3 <lZD$
+0001DADB <D:D$
+0001DAF7 <T:D$!(`
+0001DB23 <h:D$!(`
+0001DB87 <lZD$&.
+0001DB97 <lZB$
+0001DCBE B0! @
+0001DCEE B0! @
+0001DD1E B0! @
+0001DD4E B0! @
+0001DD7E B0! @
+0001DDAE B0! @
+0001DFE3 <lZB$
+0001E00F <lZB$
+0001E043 <lZB$
+0001E06F <lZB$
+0001E09B <lZB$
+0001E1BF <lZC$
+0001E1D3 <lZB$
+0001E1FF <lZB$
+0001E307 <lZB$
+0001E4DE E4J!
+0001E506 E4J!
+0001E5DF <@;B$!
+0001E633 <X;B$!
+0001E6FE B0! @
+0001E70A E4J!
+0001E7E6 B0! @
+0001E7F2 E4J!
+0001E81B <lZB$
+0001E833 < ;B$
+0001E94A B0! @
+0001E956 E4J!
+0001E97F <lZB$
+0001E997 <lZC$
+0001E9BD ;E$ 
+0001E9D7 <lZC$
+0001E9FB < ;E$ 
+0001EA0F <lZC$
+0001EA33 <lZC$
+0001EB4E B0! @
+0001EB5A E4J!
+0001EC2B <x;B$!
+0001ED7A B0! @
+0001ED86 E4J!
+0001EDAF <lZC$ 
+0001EDE3 <tZB$
+0001EE46 B0! @
+0001EE52 E4J!
+0001EEE6 B0! @
+0001EEF2 E4J!
+0001F06B <lZD$
+0001F15B <lZB$M
+0001F16E B$! @
+0001F18A E4J!
+0001F289 ;B$!
+0001F3BA E4J!
+0001F46B <lZB$
+0001F4B3 <lZB$
+0001F68F <lZC$
+0001F6CF <lZC$
+0001F70B '! @
+0001F73B '! @
+0001F7CB <lZB$
+0001F88A E4+&
+0001F997 <lZB$
+0001FA2F <`Zc$
+0001FA4F < Zc$
+0001FAA9 Yc$Q
+0001FAF5 YD$!
+0001FB57 $!(b
+0001FB93 $!(b
+0001FBE3 $!(b
+0001FC0D YD$!
+0001FD56 B$! @
+0001FD62 E$=&
+0001FD72 B$! @
+0001FD7E E$=&
+000200C2 B$! @
+000200E6 B$! @
+000207EA B$! @
+000208A6 B$! @
+000208CA B$! @
+0002120E B$! @
+00021266 B$! @
+000212C2 B$! @
+00021366 B$! @
+00021432 B$! @
+0002148E B$! @
+000217E7 <USB4
+00021A7F <USB4
+00021BFA D4:/
+00021C5E E4!/
+00021D3A D4:/
+00021D6A E4!/
+00021E2A D4//
+00021ECB <lZB$
+00021F56 D4:/
+00021FB2 B0! @
+00021FBE E4!/
+00021FD2 B0! @
+00021FDE E4!/
+00021FF2 E4!/
+00022002 D4:/
+00022076 D4:/
+000220A6 E4!/
+00022166 D4//
+00022A6B $!0@
+00022C05 ;D$B
+00022E01 ;D$B
+00022E09 ;E$z
+00023579 <D$B
+000235A7 $!0@
+000235C9 <D$B
+00023633 $!0@
+00023655 <D$B
+000236C1 ;D$B
+00023719 <D$B
+00023765 <D$B
+000237DD <D$B
+00023825 <D$B
+00023865 <D$B
+000238BD <D$B
+000239EF $!0@
+00023A11 <D$B
+00023A19 ;E$U
+00023BDE B$! @
+00023BE7 <(GE$
+00023D3A B$! @
+00023D56 B$! @
+00023E8D ZD$!(
+00023F5B <(GB$(Gb
+00023F67 <(GC$B
+00023F6F <(GB$
+00023F7D ZD$!(
+00023FA5 ZC$B
+00023FC9 ZC$B
+00023FE9 ZC$H
+0002401F <(GD$
+00024037 <(GB
+0002409A B$! @
+000240A3 <0GE$
+000240EE B$! @
+00024133 <0GB$0Gb
+0002413F <0GC$B
+00024147 <0GB$
+00024177 <0GD$
+0002418F <0GB
+0002422B <0GB
+0002424B <0GB$
+00024343 < <D$B
+0002434B <0<E$Z
+00024383 <0GB
+000243A3 <0GB$/
+000245A3 <@<D$B
+000245AB <P<E$<
+000247BF 0! @
+00024B49 HD$!(
+00024C43 <@<D$B
+00024C4B <P<E$
+00024C6A B$! @
+00024C86 B$! @
+00024D0A B$! @
+00024D66 B$! @
+00024D82 B$! @
+00024D9D HD$(
+000250EA B$! @
+0002513A B$! @
+000252E7 <@<D$B
+000252EF <P<E$
+0002584B <@<D$B
+00025853 <P<E$
+00025946 B$! `
+0002595E B$! @
+00025967 <8GE$
+00025D0A B$! `
+00025D22 B$! @
+00025D2B <8GE$
+00025E83 <@<D$B
+00025E8B <P<E$^
+00025ECB <@<D$B
+00025ED3 <P<E$g
+00025F73 <@<D$B
+00025F7B <P<E$
+0002611B <@<D$B
+00026123 <P<E$
+00026166 B$! @
+000262F1 HC$B
+00026315 HC$B
+0002632B <8GB$8Gb
+00026337 <8GC$B
+0002633F <8GB$
+0002638B <8GD$
+000263A3 <8GB
+00026D8B <X<D$B
+00026D93 <h<E$!
+00026EC7 <X<D$B
+00026ECF <h<E$Z
+00026F6F <X<D$B
+00026F77 <h<E$f
+00026FCF <X<D$B
+00026FD7 <h<E$m
+0002716F <X<D$B
+00027177 <h<E$
+00027317 <X<D$B
+0002731F <h<E$
+000275CB <X<D$B
+000275D3 <h<E$f
+00027667 <X<D$B
+0002766F <h<E$x
+0002771B <X<D$B
+00027723 <h<E$
+00027ACB <X<D$B
+00027AD3 <h<E$
+00027DF1 HC$B
+00027F31 HC$B
+000280AE B$! @
+000280C7 <t<D$B
+000280D1 <E$y
+000283C3 ,!8d
+00028443 <t<D$B
+00028535 HC$B
+00028559 IC$B
+0002869B <@GB$
+000286AF <@Gc$
+0002871D ZD$!(
+000287E6 B$! @
+00028802 B$! @
+0002897A B$! @
+00028983 <@GE$kJ
+00028A86 B$! @
+00028A8F <@GE$kJ
+00028E8A B$! @
+00028F01 ZD$!(
+00028F1B <@GB$@Gb
+00028F27 <@GC$B
+00028F2F <@GB$
+00028F4D ZC$B
+00028F71 ZC$B
+00028F91 ZC$(
+00028FCF <@GD$CJ
+00028FE7 <@GB
+0002934D <D$B
+00029355 <E$(
+000293B9 <D$B
+00029CF5 <D$B
+00029CFD =E$7
+00029E49 <D$B
+00029E51 =E$~
+00029E73 '! @
+00029ED2 B$! @
+0002A09E B$! @
+0002A0F6 B$! @
+0002A116 B$! @
+0002A27E F4ig
+0002A506 B$! `
+0002A6BB <4=D$B
+0002A6C3 < =E$
+0002A77E B$! @
+0002AB57 '! @
+0002B6A6 e$!(
+0002B7A6 B$! @
+0002B7C2 B$! @
+0002BA0F <D=D$B
+0002BA17 <L=E$
+0002BA93 <h=D$B
+0002BA9B <T=E$
+0002BADF <x=D$B
+0002BAE7 <L=E$
+0002BC23 <x=D$B
+0002BC2B <L=E$K
+0002BCAE B$! @
+0002BD3F <(IB
+0002BD46 B$(Ib
+0002BD4F <(IB
+0002BD63 <x=D$B
+0002BD6B <L=E$m
+0002BF03 <(IB
+0002BF0A B$(Ib
+0002BF75 =D$B
+0002BFB1 =D$B
+0002BFB7 <L=E$
+0002BFDF '! @
+0002C0EF '! @
+0002CA42 B$! `
+0002CA72 B$! `
+0002CAA2 B$! `
+0002CF8F $!8@
+0002E4D2 B$! @
+0002E65E B$! @
+0002E74D =D$B
+0002E755 =E$+
+0002E832 B$! @
+0002E88D =D$B
+0002E895 =E$F
+0002EAD5 =D$B
+0002EC5E B$! @
+0002EE62 B$! @
+0002F0BE B$! @
+0002F156 B$! @
+0002F181 =D$B
+0002F189 =E$)
+0002F652 B$! @
+0002F6A2 B$! @
+0002F6D5 =D$B
+0002F6DD =E$6
+00030431 =D$B
+00030439 =E$,
+0003082D =D$B
+000308DD =D$B
+00030BD1 =D$B
+00030BD9 =E$^
+00030C0D =D$B
+00030C15 =E$d
+00030D99 =D$B
+00030FD1 =D$B
+00031355 =D$B
+000313B1 =D$B
+000317D9 =D$B
+000317E1 =E$'
+00031885 =D$B
+0003188D =E$X
+00031ABD =D$B
+00032015 =D$B
+0003201D =E$M
+0003253D =D$B
+00032545 =E$6
+000325F7 $!8@
+00032765 >D$B
+000327D7 <0>D$B
+00032C53 $!8`
+00032E1E B$! `
+00032E36 B$! @
+00032E3F <8GE$+t
+00032EEF $!8`
+00033807 $!8@
+00033983 <<>D$B
+00033F2F $!8`
+000341C3 $!8@
+0003426B $!8@
+00034333 <t>D$B
+0003433B <d>E$5
+000343B4 |>5%
+000344F7 '!0 
+00034553 '!  
+00034563 $!  
+00034573 $!  
+0003482F '!(`
+00034A6E 1'!(@
+00034B0A "*! 
+00034C4B &! `
+00034C72 B*!  
+00034F66 (%!((
+00034F83 $!('
+00034F9F $!(#
+00034FF7 <gf(5
+0003502E Q0! 
+0003512F <gf(50
+0003516E Q0! 
+0003522B 0&HE
+000352A1 >F$0
+0003531F %!p(
+00035326 H0&x?
+0003533F $! %
+00035377 |! '
+0003539A '3&p
+000353C6 D%J|
+00035453 1!h*
+000354A7 0! K
+000354B7 %!@)
+000354BF 1!(+
+00035583 1!x*
+00035633 1!x*
+00035703 1!`0
+00035727 0!  
+0003579B $! `
+000357CA c$!8
+00035976 L%#@
+00035A76 B$!( 
+00035B2F $! @
+00035B5A c$!0
+00035C3A ,%#@
+00035CA3 $&`o
+00035D07 $!H 
+00035D52 +%#@
+00035DBB $&XX
+00035E97 $!(@
+00035ED3 $! @
+00035EFA c$!0
+00035F9F $!0@
+0003603B $+HC
+00036086 B$!  
+00036122 ,%#@
+000361E7 $! @
+000362DA B$!(`
+000362FE c$!0
+00036373 $&xt
+000364A3 $!0@
+000364F3 $!(@
+00036593 $!0 
+000366EB $&HK
+00036726 B$!  
+0003673F $!  
+00036757 $!( 
+000367A6 B$! @
+00036853 $&HK
+000368BE B$! 
+00036A8E W$! 
+00036ABB $&@#
+00036AF3 $&Pl
+00036B26 B$! `
+00036BA7 $!  
+000370AF $!(@
+000371A6 B$!  
+000371F3 $!0 
+000373E5 Bb$!`
+0003744E )%&x%
+0003745E -)&p
+00037487 '!Ph
+000374D1 Bb$H
+0003780B <! @
+00037847 <PIC
+0003789B 'PI`
+000378C7 'PI`
+00037933 $!0`
+00037C87 <\Iq$!  
+00037C9B $! @
+00037CD3 $!(p
+00037D6F $&pI
+00037D87 }!x+
+00038363 $&pI
+0003837B }!x+
+00038935 Cj$H
+000389A6 %% N
+00038AA3 '! @
+00038AEB '! @
+00038B55 "3DUfw
+00038B6C CONFIG
+00038B74 upgrade: minifs_read fail,dFsRet = %d
+00038B9C dump_mem: not support mode
+00038BB8 dump_mem: startaddr must be align by %d bytes!
+00038BE8 startaddr %p, size %d, count %d, count_per_line %d
+00038C1D %08x: 
+00038C24 %02x 
+00038C2C %04x 
+00038C34 %08x 
+00038C40 upgrade: %s: time is %d s
+00038C5C CheckFwEncrypt
+00038C6C upgrade: Fw head: %s, %d
+00038C88 upgrade: PCFWDecryptInit begin!
+00038CAC upgrade: result= %d!
+00038CC4 upgrade: result=%d,g_MipsHeadLen=%d,g_dFwSectorLen= %d
+00038CFC CheckFwLength
+00038D0C upgrade: %s %d, dFwSectorLen 0x%x, AfiHeadSectorLen 0x%x,sFwuTaillen 0x%x,dRet = %d
+00038D64 CheckFwTail
+00038D70 FwuTail
+00038D78 upgrade: %s %d, FwuTailFlag 0x%x
+00038D9C CheckFwIntegrity
+00038DB0 upgrade: %s %d, dReadFwChecksum 0x%x
+00038DD8 CalFwChecksum start
+00038DEC CalFwChecksum end
+00038E00 upgrade: %s %d, dCalFwChecksum 0x%x
+00038E28 upgrade: %s %d, error is %d
+00038E4C AnalyseAfiDir
+00038E5C psAfiDir[i].type =%d
+00038E74 upgrade: i %d, %s, %d
+00038E8C upgrade: AFI dir offset: %s, %d
+00038EB0 CheckLfiHead
+00038EC0 upgrade: New LFI head: %s, %d
+00038EE0 upgrade: %s, %d
+00038EF4 ReviseLfiHeadCapinfo
+00038F0C upgrade: Old LFI head: %s, %d
+00038F2C upgrade: Old area lba: %s, %d
+00038F4C upgrade: New Logicalcap = 0x%x, New area lba: %s, %d
+00038F84 upgrade: no need to rearrange
+00038FA4 upgrade: must rearrange
+00038FC0 upgrade: minifs_file_rearrange fail,dRet = %d!
+00038FF0 upgrade: ps_idin flashdi
+0003900C upgrade: nandid.bin too long
+0003902C upgrade: nandid.bin head
+00039048 upgrade: nandid.bin head err
+00039068 upgrade: flash id not match
+00039088 upgrade: flash id match %d
+000390A4 upgrade: merged flash id
+000390C0 upgrade: nandrr.bin too long
+000390E0 upgrade: nandrr.bin head
+000390FC upgrade: new rr id 
+00039114 upgrade: old rr id 
+0003912C upgrade: final merged rr id 
+0003914C CheckMbrc
+00039158 upgrade: New Mbrc: %s, %d
+00039174 ActBrm
+0003917C get_afinfo
+00039188 upgrade: %s
+00039198 upgrade: w_crc = 0x%x BrecCheckSum=0x%x, sectnum_end=%d
+000391D4 upgrade:  dir_checksum = %x  %x
+000391F8 BackupLogicalInfo
+0003920C upgrade: appinfo: %s, %d
+00039228 upgrade: pdcert: %s, %d
+00039244 FWINFO.bin
+00039250 upgrade: fwinfo err
+00039268 CalPrgStep
+00039274 upgrade: dPrgStep 0x%x, %s, %d
+00039294 CheckFw
+0003929C CheckFw start
+000392AC upgrade: fw flag ok
+000392C4 upgrade: fw head decrypt ok
+000392E4 upgrade: afihead ok
+000392FC upgrade: fw integrity ok
+00039318 upgrade: afi dir ok
+00039330 upgrade: CheckLfiHead ok,%s,%d
+00039350 upgrade: lfi head ok
+00039368 upgrade: mbrc ok
+0003937C upgrade: nandid ok
+00039390 upgrade: %s err = %d
+000393A8 upgrade: sectnum_end = 0x%x
+000393C8 upgrade: BrecCheckSum = 0x%x
+000393E8 upgrade: w_crc = 0x%x
+00039400 upgrade: %dth mbrec ok
+00039418 upgrade: %d/4 mbrec ok
+00039430 UpgradeFw
+0003943C UpgradeFw start
+0003944C upgrade: write mbrc ok
+00039464 UpgradeFw physical over
+0003947C upgrade: backup logical ok
+00039498 UpgradeFw Lfi over
+000394AC UpgradeFw Lfibak over
+000394C4 UpgradeFw CONFIG over
+000394DC UpgradeFw Ucode over
+000394F4 upgrade: decrypt_time = 0x%x
+00039514 upgrade: rfile_time = 0x%x
+00039530 upgrade: write_flash_time = 0x%x
+00039554 UpgradeFw over
+00039564 upg_malloc
+00039570 upgrade: g_dOutBufSectorLength 0x%x: %s, %d
+000395A0 backup_oldinfo
+000395B0 upgrade: %s, %d, g_dFlashType %s
+000395D4 upgrade: %s, %d, LFIFlag 0x%x
+000395F4 upgrade: UPGRADE: malloc err
+00039614 upgrade: UPGRADE: malloc sucess
+00039638 upgrade: UPGRADE: old info err
+00039658 upgrade: UPGRADE: old info right
+0003967C upgrade: UPGRADE: udisk_lba = 0x%x,udisk_cap = 0x%x!
+000396B4 upgrade: UPGRADE: ucode_lba = 0x%x,ucode_cap = 0x%x!
+000396EC upgrade: UPGRADE: Logicalcap = 0x%x 
+00039714 upg_cmd_init
+00039724 upgrade: enter upg_cmd_init
+00039744 upgrade: %s, start_Secs:%x
+00039760 /mnt/udisk
+0003976C upgrade: minifs_mount fail:d_ret =%d
+00039794 /mnt/udisk/oldfw.upg
+000397AC upgrade: minifs_rename ret = %d!
+000397D0 upgrade: minifs_open fail,g_dFwFileHandle = %d
+00039800 upgrade: open success! g_dFwFileHandle:%x
+0003982C upgrade: g_dFwSectorLen:%x
+00039848 upgrade: upg_cmd_exit 
+00039860 upgrade: unminifs_mount fail
+00039880 /mnt/udisk/usb2prt.txt
+00039898 /mnt/udisk/u2load.txt
+000398B0 /mnt/udisk/prt2log.txt
+000398C8 upgrade: begin upgrade!
+000398E4 upgrade: usb_upgrade_flag = %x!
+00039908 upgrade: card cap = %x!
+00039924 upgrade: UPGRADE ERR: NOT SUPPORT UPG_U_HOST 
+00039954 upgrade: ->usb_upgrade_flag=0x%x
+00039978 upgrade: UPGRADE ERR: UNKOWN FLAG 
+0003999C upgrade: ENTER  UDISK FROM BOOT
+000399C0 upgrade: enter ucode and udist!!
+000399E4 upgrade: enter udist!
+000399FC us227a.upg
+00039A08 upgrade: UPGRADE_FW_FILE:%s
+00039A28 upgrade: upgrade success!
+00039A44 Hello udisk!
+00039A54 b2u->nluns = 0x%x
+00039A68 b2u->disklist[0].lba0_offset = 0x%x
+00039A90 udisk exit!
+00039AA0 -------MSC_STATE_SUSPEND-------
+00039AC4 Actions
+00039ACC wanghui's udisk
+00039ADC serial
+00039AE4 Bus-powered
+00039AF0 Mass Storage
+00039BC1 fs bug %s, %d
+00039BD0 file.c
+00039BD8 assert failed in file %s at line %d
+00039C00 minifs_rename
+00039C10 %s, %d, err:%d
+00039C21 fs bug %s, %d
+00039C30 file_table.c
+00039C41 fs bug %s, %d
+00039C50 inode.c
+00039C59 fs bug %s, %d
+00039C68 rearrange.c
+00039C75 fs bug %s, %d
+00039C84 slab.c
+00039C8C fs rd err!
+00039C98 fs wr err!
+00039CA4 fs_malloc
+00039CB0 %s failed! %d
+00039CC1 fs bug %s, %d
+00039CD0 sys.c
+00039CF1 fs bug %s, %d
+00039D00 creat.c
+00039D08 .          
+00039D14 ..         
+00039D20 exfat_build_slots
+00039D34 %s, %d, %s, %d
+00039D44 %s, %d
+00039D4C dir.c
+00039D54 fat_search_short
+00039D68 %s, %d, err:%d
+00039D79 fs bug %s, %d
+00039D88 fat_search_short_by_extname
+00039DA4 %s, %d, err:dir=NULL!
+00039DBC %s, %d, extname:%s
+00039DD1 fs bug %s, %d
+00039DE0 fat_file.c
+00039DED fs bug %s, %d
+00039DFC fat_misc.c
+00039E08 exfat_parse_dbr
+00039E18 %s, %d, secper512:%d
+00039E30 %s, %d, %d
+00039E3C assert failed in file %s at line %d
+00039E64 vfat_parse_sb
+00039E74 %s, %d
+00039E86 _cN^
+00039E91 "3DUfw
+00039EF6 <B'%RG
+00039F19 ,2wjr
+00039F4F mBf|
+00039F63 g>8@gv
+00039FD7 )]q0
+00039FFE r<69
+0003A035 {A3M
+0003A056 BSg+W|
+0003A069 %sEz
+0003A083 gj;[
+0003A182 Vyx8
+0003A1B5 Jypav
+0003A1DB iXH_
+0003A1F9 v0&CP
+0003A213 EJ~n;b
+0003A231 ;*(>
+0003A24C @w.U
+0003A254 .-ZCA
+0003A2A5 v@el
+0003A2B5 Rk$G
+0003A2C3 V0$U
+0003A2DA Ds"8
+0003A2E6 78?$
+0003A31D  iciNWq
+0003A370 `\`U'K1
+0003A391 ~&jE
+0003A3C5 S2zw
+0003A45E Qjh/T
+0003A518 yr,@
+0003A574 H{1S
+0003A6B0 AJsN
+0003A6CD "//w
+0003A717 n!ec
+0003A9CF $!0,
+0003AA02 )%+(+
+0003AA23 <!P)
+0003AAD9 hNp!
+0003AEFA @T! 
+0003B052 bp@0
+0003B10E bp!(`
+0003BB07 welcome
+0003BB10 error:matrix_addr is NULL 
+0003BB2C ******* boot_pic_info error!
+0003BB4C SET_BACK_LIGHT2 light level %d
+0003BC9A 0%!0@
+0003BECF '!  
+0003C091 [c|0
+0003C11E `Q!(`
+0003C1C2 @P!8
+0003C493 <$@l
+0003C49A I5%8
+0003C5BF $$8b
+0003C61E e8!8 
+0003C68B $$8f
+0003C88F ,%(b
+0003C8A7 5!p 
+0003C96E `T@#
+0003C97F 0!p@
+0003CBBB $$Pl
+0003CD03 $$(8
+0003CD1E "-%0
+0003CECF 0!( 
+0003CFCE d4B(
+0003D05B <%x?
+0003D141  ^%%H
+0003D161  d$B
+0003D2A6 I9B 
+0003D2DB <$@K
+0003D335  F$!@
+0003D3B2 87$ 
+0003D3DD  I54
+0003D7FC do_test_mode_fbsize_enable
+0003DD80 try_test_mode_fbsize
+0003DD98 do_test_mode_fbsize_enable
+0003DDB4 %s xres %d yres %d
+0003DDCF ahb_clk=0 error -1:
+0003DDE4 ahb_clk=0 error -1:
+0003DDFC fb_de_hw.c
+0003DE0E flag error %s %s
+0003DE20 fb err =%x
+0003DE37 fomat error in de_video_layer_for_special_effect
+0003DE6C frame buffer data format error!!!!!!!!
+0003DE94 [fb ]BUG out_w==0 %s %d
+0003DEB0 format not support 
+0003E445 @@@@@@@
+0003E465 HHHH
+0003E4A9 <JHH<
+0003E50A @@@@
+0003E52C   @@@@@@  
+0003E5B8    @
+0003E617    @@@
+0003E6D9 ~@@@|
+0003E7A7    @
+0003E84A 0@@ G
+0003E866 ((((D|D
+0003E96E @@@@@@@@
+0003EB1C DDD(((
+0003EB7E DD(8
+0003EBE1 @@@   
+0003ED2D @@@@@@@
+0003EE1B f@D@D@D@D@D@D@
+0003EEFB @@@@@@8
+0003EF3E DD((
+0003EFA0 DD((
+0003EFDE      
+0003EFE4       
+0003EFFE               
+0003F6C6 F$! 
+0003FA46 j% D
+0003FBCF <D'G$!0
+0003FC31 !l$!P
+0003FFA7 <D&x&
+0003FFE7 $D&`
+000402F2 b$! "
+00040377 '<9D$!(@
+000403DF $&Pf
+0004047B 9D'b%(
+000404BD !v$! 
+0004063A C8'P
+00040646 c,%PC
+0004067E C8@P
+0004070F <%X(
+0004071B $D#X$
+00040721 $p$!H
+000407CA )%'0
+00040867 <%`H
+00040873 $D#O$
+00040879 $x$!@
+00040887 $! f
+000409F8 D'I%(
+00040A20 D&V$
+00040BBD 9d&!(
+00040BD1 9D&!(
+00040C30 D&J$
+00040C35  l$!X
+00040DA6 "9' 
+00040DB2 Y,%x
+00040DD4 D&c$
+00040DEF <!HF
+00042CC4 %s %d-----------error! request_gpio(%d, %d) failed!
+00042CFC multifunc.c
+00042D08 %s %d-----------error! free_gpio(%d, %d) failed!
+00042D3C mfp bin err pin_num = %d---(max num is %d)
+00042D68 mfp bin err mod_id = %d---(max mod id is %d)
+00042D98 gpioa_%d
+00042DA4 err: mod_id=%d
+00042DB4 gpiob_%d
+00042DC0 mfpctl_no=%d pin_id=%d
+00043010 card_host
+0004310F '! @
+0004327A B$! @
+00043852 D$!(
+00043C82 B$! @
+00043D2B '! @
+00043EF7 '! @
+00046CA3 $!(b
+00047037 $! b
+00047EB6 F$!8
+00047F1E B$! `
+00047FB3 '! @
+0004827A D$!(`
+000482C7 $!8@
+00048883 '! @
+00048A7B '! @
+00048D0B '! @
+00048E2F '! @
+0004904F '! @
+00049067 '! @
+0004907F '! @
+000490DF '! @
+00049143 '! @
+000492BB '! @
+000493BF '! @
+000493D7 '! @
+00049737 '! @
+0004986B '! @
+00049952 B$! @
+0004AAEB $!(b
+0004AE7F $! b
+0004BC7F $! b
+0004C1CF $!(b
+0004C563 $! b
+0004D363 $! b
+0004DF4B $! `
+0004E20A B$! `
+0004E297 '! @
+0004EFD7 '! @
+0004F262 B$! @
+0004F37F '! @
+0004F73B '! @
+0004F877 '! @
+0004F88F '! @
+0004F8EF '! @
+0004FA53 '! @
+0004FA6B '! @
+0004FA83 '! @
+0004FAE3 '! @
+0004FCD7 '! @
+0004FCEF '! @
+0004FD9F '! @
+0004FE66 B$! @
+0004FFCE B$! @
+00050016 B$! @
+0005009B $!(@
+00050102 B4! @
+00050196 B$! @
+0005021E B$! @
+000502A6 B$! @
+000504D6 B4! @
+000509D2 B$! @
+00050A6B $!(@
+00050ABE B$! @
+00050B2A B$! @
+00050BAE B$! @
+00050C1E B$! @
+00050C5E B$! @
+00050CB6 B$! @
+00050CD6 B$! @
+00050CF6 B$! @
+00050D16 B$! @
+00050D3A B$! @
+00050D56 B$! @
+00050E1A D$!(`
+00050F2E B$! @
+00050F87 $!(@
+00050FAA B$! @
+0005101A B$! @
+00051032 D$!(`
+00051056 B$! @
+000510C6 B$! @
+000510DE D$!(`
+000513AF $!(@
+00051687 $$ b
+00051F26 B$! @
+00051F42 B$! `
+00051F5E B$! @
+00051F7A B$! `
+00051F96 B$! @
+00051FBA B$! `
+00052477 <@BB4
+0005284A B4! @
+000528F2 B4! @
+000529DA B$! @
+00052BDE B4! @
+0005352E F$UA
+00053714 mmc_blk_issue_rq
+00053728 [CARD_E]:%s, %s(), L%d mmc_blk_issue_rq: card_ptr = NULL
+00053764 mmc/card/card_entry.c
+0005377C [CARD_E]:%s, %s(), L%d brq.cmd.error = %d,brq.data.error = %d,brq.stop.error = %d
+000537D0 [CARD_E]:%s, %s(), L%d mmc_blk_issue_rq ret = %d
+00053804 act_card_transfer
+00053818 [CARD_E]:%s, %s(), L%d no card in !
+00053840 sd0_pdev.host_entry = 0x%0x
+000538A4 mmc_request_done
+000538B8 [CARD_E]:%s, %s(), L%d%s: req failed (CMD%u): %d, retrying...
+000538F8 mmc/core/core.c
+00053908 [CARD_E]:card is not in stanby before read or write,status = 0x%x,err = %d
+00053954 [CARD_E]:mmc_stby_to_tran fail
+00053974 [CARD_E]:card is not turned to tran before read or write,status = 0x%x,err = %d
+000539C8 [CARD_E]:card is not in tran after read or write,status = 0x%x,err = %d
+00053A14 [CARD_E]:mmc_tran_to_stby fail
+00053A34 [CARD_E]:card is not turned to standby after read or write,status = 0x%x,err = %d
+00053A88 kernel BUG at %s:%d!
+00053AA0 NULL pointer in host ops
+00053ABC mmc_attach_sd:
+00053ACC mmc_attach_mmc:
+00053AE0 mmc host is suspend
+00053B20 #(-27<FP
+00053B88 mmc_decode_cid
+00053B98 mmc:--%s--%d--
+00053BA8 kernel BUG at %s:%d!
+00053BC0 mmc/core/mmc.c
+00053BD0 [CARE]:mmc:bus_width= %d
+00053BEC <6>%s: card %04x removed
+00053C08 mmc_detect
+00053C14 --%s--%d--
+00053C20 [card]:mmc_init_card fail,err = %d
+00053C54 %s: card claims to support voltages below the defined range. These will be ignored.
+00053CAC %s: error %d while initialising MMC card
+00053CD8 kernel BUG at %s:%d!
+00053CF0 mmc/core/mmc_ops.c
+00053D04 MMC_SCAN_CMD_1_RSP
+00053D40 #(-27<FP
+00053DA8 mmc_decode_csd
+00053DB8 [CARD_E]:%s, %s(), L%d%s: unrecognised CSD structure version %d
+00053DFC mmc/core/sd.c
+00053E0C mmc_decode_scr
+00053E1C [CARD_E]:%s, %s(), L%d%s: unrecognised SCR structure version %d
+00053E60 mmc_read_switch
+00053E70 [CARD_E]:%s, %s(), L%d%s: card lacks mandatory switch function, performance might suffer.
+00053ECC [CARD_E]:%s, %s(), L%d%s: could not allocate a buffer for switch capabilities.
+00053F1C [CARD_E]:%s, %s(), L%d%s: problem reading switch capabilities, performance might suffer.
+00053F78 mmc_switch_hs
+00053F88 [CARD_E]:%s, %s(), L%d%s: Problem switching card into high-speed mode!
+00054030 kernel BUG at %s:%d!
+00054048 will set MMC_BUS_WIDTH_1.
+00054064 Max c-fre=%d, need set =%d.
+00054084 assert failed in file %s at line %d
+000540BC mmc_attach_sd
+000540CC [CARD_E]:%s, %s(), L%d%s: card claims to support voltages below the defined range. These will be ignored.
+00054138 [CARD_E]:%s, %s(), L%d%s: SD card claims to support the incompletely defined 'low voltage range'. This will be ignored.
+000541B4 [CARD_E]:%s, %s(), L%d%s: error %d while initialising SD card
+000541F4 kernel BUG at %s:%d!
+0005420C mmc/core/sd_ops.c
+00054221 Send transfer_only_clock time out!
+00054248 atj213xmmc_finish_request host->mrq =%x
+00054275 Send cmd %d time out!
+0005428C CMD%2d CMD_NO_RSP!
+000542A0 CMD%2d CMD_RSP_CRC_ERROR
+000542BC %.2x 
+000542C8 atj213xmmc_data_complete
+000542E4 [CARD_E]:%s, %s(), L%d host NULL
+00054308 mmc/host/atj227x_mmc.c
+00054320 card trandfer data error!
+0005433C read:crc error, times = %x
+00054358 SD_STATE:0x%x
+00054368 write:crc error, times = %x
+00054388 c-stop again!
+00054398 -------------------------still has sg to go--------------------------!
+000543E0 atj213xmmc_prepare_data
+00054420 [CARD_E]:%s, %s(), L%d Require dma channel error!
+00054454 atj213xmmc_request
+00054468 [CARD_E]:%s, %s(), L%d host->mrq == NULL!!!!
+00054498 [CARD_E]:%s, %s(), L%d cmd%d time out and skip dma channle%d_cmd check!
+000544E4 [CARD_E]:%s, %s(), L%d cmd%d dma%d time out!
+00054514 [CARD_E]:%s, %s(), L%d tm7_check = %d
+00054550 mmc_suspend_host
+00054564 mmc_resume_host
+00054574 mmc_get_info
+00054A83 $$(r
+00054E9B $!  
+00054FD7 $%@*
+0005543B $+Hj
+000557AA i$!@
+00055A2F $!(`
+00055A47 $!(@
+00055A9A e5$H
+00055AD2 '&!(
+00055FC0 i2c_write_byte
+00055FD0 _wait_ack
+00055FDC i2c_puts
+00055FE8 i2c_gets
+00055FF4 i2c_write_one_reg1
+00056008 i2c_read_one_byte
+000560AC i2c_comm_gpio.c
+000560BC ERROR(errno=)-%s,%d,%s--- 
+000560D8 time out...................
+000560F8 ERROR(errno=)-%s,%d,%s--- 
+00056114 time out..............
+00056130 ERROR(errno=)-%s,%d,%s--- 
+0005614C start err..........
+00056164 ERROR(errno=)-%s,%d,%s--- 
+00056180 write err.........
+00056198 ERROR(errno=)-%s,%d,%s--- 
+000561B4 read err............
+000561CC ERROR(errno=)-%s,%d,%s--- 
+000561E8 start err...........
+00056200 ERROR(errno=)-%s,%d,%s--- write err
+00056228 ERROR(errno=)-%s,%d,%s--- 
+00056244  restart err...........
+00056260 ERROR(errno=)-%s,%d,%s--- 
+0005627B write1 err..............
+00056298 ERROR(errno=)-%s,%d,%s--- 
+000562B3 write3 err..............
+000562D0 ERROR(errno=)-%s,%d,%s--- 
+000562EB start err..............
+00056304 ERROR(errno=)-%s,%d,%s--- 
+0005631F read err..............
+00056338 key power onoff long press
+00056354 key power onoff press
+0005636D --Mr_huang 111 encrypt error
+0005638D --Mr_huang 111 encrypt again
+000563AD --Mr_huang 111 encrypt success
+000563D1 --Mr_huang 111 get_a5_state = %d, get_a6_state = %d
+00056409 --Mr_huang 111 control io success
+0005642D --Mr_huang 111 control io again 1
+00056451 --Mr_huang 111 control io error 1
+00056475 --Mr_huang 111 control io again 2
+00056499 --Mr_huang 111 control io error 2
+00056A13 $$HD
+00056D57 <% H
+00056DA3 5%HK
+00056DFB <$ K
+00056E02 (5%8
+0005768F $$@i
+00057777 %!HK
+000578AF $$HK
+00057A9A d(!0
+00057ADA d(!0
+00057BC7 $$@*
+00057FF8 _pwm_reg_init
+00058008 DISP_EN
+00058010 RESET
+00058018 module_open_count has be zero, close() more than open()
+00058050 BL_EN
+00058058 ERROR(errno=)-%s,%d,%s--- pwm reg init err!
+00058088 lcd_backlight.c
+000584CE 8.+x
+000584E7 &!(`
+0005873B <PWF
+00058906 87$p
+0005891F 5$HK
+000589B7 <%HK
+00058A3B <PWC
+00058D5C VBUS_CD
+00058D64 POW_ON
+00058D71 shutoff_param -> cmd = %d
+000590C6 8.+x
+000590DF &!(`
+0005919B <%@*
+000591BB <!0 
+00059223 %!0 
+000592BF $$@)
+000594B4 SPEAKER_ON
+000594C0 LED_POW
+00059B72 2'!`@
+00059B97 $!8-
+00059BCA J%+0L
+00059BF2 j%!(
+00059CA3 r! _
+00059D2F <gfR4
+00059D53 <# K
+00059FFF %!0@
+0005A89C upgrade:000%  waiting......
+0005A8BC upgrade:000%  ok!
+0005A8D0 display_init:ret = %d
+0005A8E8 upg_pic.bin
+0005A8F4 update err 

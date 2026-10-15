@@ -1,0 +1,25 @@
+# OS / editors
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# build outputs
+*.o
+*.obj
+*.elf
+*.map
+*.lst
+*.dep
+*.d
+*.tmp
+
+# firmware / device dumps (not distributed here)
+*.irf
+ORIG_*.bin
+*_SPI_*.bin
+
+# Windows
+$RECYCLE.BIN/
+.Trash-*/

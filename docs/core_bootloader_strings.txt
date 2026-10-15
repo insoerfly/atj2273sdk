@@ -1,0 +1,302 @@
+000093 <ZZ)5
+0000f5 `k5!`
+0001f4 ActBrm
+000332 c$!H+
+000f8e B$lA"
+00152a J5%HI
+00157e J5$PI
+00158a )5%PI
+0018fc ""b4""b4""b5""r5"2
+001e94 SPEAKER_ON
+001ffd Uc]storage.bin
+00201f )brecf03.bin
+00203c ^6W/upg.bin
+002060 welcome.bin
+00207f Gfb.bin
+0020a0 TEST16.BIN
+0020c0 mfp.bin
+0020e0 card.bin
+002100 key.bin
+00211c kR]Elcd.bin
+00213f Dshutoff.bin
+00215d PGXstartup.bin
+00217f Nupg_lcd.bin
+002443 <hVB$
+002767 <@OD$
+00276f <0OE$x
+0027d7 <lOD$
+0027df <0OE$
+002926 B$! @
+00294e B$! @
+00298b <hVD$@
+0029a3 <hVD$
+0029d7 <S0c4
+002e27 <PVP$
+002e3f <PVB$
+002efb <PVB$
+002f0f <PVB$
+002f8b <PVD$8
+002fae B0! @
+002fb7 <XVE$
+002ff6 B0! @
+003123 <XVE$
+00314f <`PD$
+003157 <LPE$
+003177 <LPE$
+0031d3 <PVB$
+00324f <LPE$
+003387 <PVB$
+0033b7 <8QD$
+003473 <|QD$
+00347b <hQE$h
+0034af <PVD$ 
+0034e6 B0! @
+0038ab <hRD$
+0038b3 <XRE$d
+0038dd VD$!(`
+003901 RD$!(`
+003933 <XRE$w
+003bc3 <0SE$
+003cc7 <0SE$
+003de7 <DSE$D
+003e66 B0! @
+003e8e B0! @
+003eb6 B0! @
+003ede B0! @
+003f06 B0! @
+003f3e B0! @
+003fc7 <dSD$
+003fcf <XSE$C
+0048db <<VB$
+004a3b <<VC$
+004a5b <<VC$
+004aa7 <<VC$
+004ae7 <<VC$
+004b37 <<VC$
+004b77 <<VC$
+004ca7 <<VB$
+004cbf <<VB$
+004cdf <<VB$
+004cf7 <<VB$
+0050da B0! @
+0050fe B0! @
+005112 B0! @
+0053df <<VB$
+005403 <<VC$
+00541b <<VC$
+00544b <<VB$
+0054b7 <|TD$
+0054bf <dTE$
+005733 <<VB$
+0059ab <|TD$
+005b5b <<VB$
+005fe3 <TUD$
+00606e B0! @
+0066f6 c44VC
+00670e c44VC
+00683a c44VC
+006852 c44VC
+006e47 <tUE$
+006e9f <tUE$<
+006f5d UD$!(`
+006fd9 UD$!(`
+007009 UD$!(`
+007314 [Storage] (SNOR) Drv entry
+007330 phy_operation
+007340 %s() %d: spinor_phy_erase() return error!
+00736c %s() %d: function number error!
+0073d4 logic_open
+0073e0 %s() %d no enough memory!
+0073fc logic_exit
+007408 logic_sector_read
+00741c %s() %d error! spinor_phy_read return 0x%x 
+00744c full_fill_context
+007460 %s() %d error! cpy_bitmap return 0x%x 
+007488 ERROR! %s() %d
+007498 %s() %d error!  spinor_phy_read return 0x%x
+0074c8 flush_context
+0074d8 %s() %d error! full_fill_context return 0x%x
+007508 %s() %d error! spinor_phy_erase return 0x%x
+007538 %s() %d error! spinor_phy_write return 0x%x
+007568 logic_sector_write
+00757c %s() %d error! flush_context return 0x%x
+0075a8 logic_read
+0075b4 %s() %d invalid param ! buff is NULL!
+0075dc %s() %d error! ret = 0x%x
+0075f8 logic_write
+007604 get_spinor_cap
+007614 %s() %d spinor_phy_info.logic_cap = 0x%x
+007640 spinor_phy_read_chipid
+007658 spinor_phy_init
+007668 %s() %d: read id error 
+007684 SPINOR ID ----------------: 0x%x.%x.%x
+0076ac %s() %d: random_init error 
+0076cc spinor_phy_exit
+0076dc spinor_phy_read
+0076ec %s() %d: invalid arg
+007704 %s() %d: spinor_hal_sec_read return 0x%x
+007730 spinor_phy_write
+007744 spinor_phy_erase
+007758 random_init
+007764 %s() %d error: no enough memory!
+0077a8 spinor_hal_init
+0077b8 spinor_hal_exit
+0077c8 spinor_hal_get_device
+0077e0 %s() %d pin_pad_config error!
+007800 spinor_hal_release_device
+00781c spinor_hal_read_chipid
+007834 spinor_hal_wait_nor_ready
+007850 spinor_hal_set_freq
+007864 spinor_hal_sec_write
+00787c %s() %d: buff is null while read 0x%x, sec 0x%x
+0078b0 spinor_hal_sec_read
+0078c4 spinor_hal_block_erase
+0078dc %s() %d erase cmd (0x%x) error!
+007900 %s()% d:  _spinor_write_enable error
+007928 spinor_hal_chip_erase
+007940 spinor_hal_clear_bp
+007954 Hardware error! check wp pin
+007974 dbg_dump_mem
+007984 %s: not support group
+00799c %s: mem_addr must be align by %d bytes!
+0079cc %08x: 
+0079d4 %02x 
+0079dc %04x 
+0079e4 %08x 
+0079ec dump_mem: not support mode
+007a08 init_storage_info
+007a1c %s() %d invalid arg
+00921e &U!  
+0094fa +*$0r
+009532 +*$0r
+0095e2 B-$8"
+009aa1 U(5& 
+009b1b <43&'! 
+00bde9 b(5!0
+00cc42 k%!8%
+00d1ee s&!  
+00e67a D%!(/
+00e6fa J%+0D
+00e84e "&#@p
+00e90e B&+(h
+00f256 1&+('
+00f2da E&!8`
+00fd4e 1&+H$
+010032 1&+0$
+01004a 53# '
+01022e 1&+P$
+01077a J%+HF
+01091a )%!0/
+01108a 2&!@0
+0116ea s$!0`
+0118fa q$!  
+0127c7 <@Bb4
+013fbc module_entry
+01410d Qkkbal
+014369 wn>Jj
+014cf4  inflate 1.2.3 Copyright 1995-2005 Mark Adler 
+014e99  iciNWq
+014eec `\`U'K1
+014fda Qjh/T
+01542c [BOOT] restore_LFIHead_DIRItem error
+015454 [BOOT] check_mbrc1st fail
+015470 [BOOT] check_mbrc2st fail
+01548c [BOOT] check_brec fail
+0154a4 [BOOT] the %dth mbrec phy blk flag =%d
+0154cc [BOOT] storage_entry fail
+0154e8 [BOOT] check_mbrc fail
+015500 [BOOT] NOW ENTER ADFU
+015518 [BOOT] Standby_ONOFF_CTL_WK:0x%x
+01553c [BOOT] RunModeTest :ENTER POWER OFF
+015564 [BOOT] WILL DISABLE_KERNEL_PRINT
+015588 [BOOT] NOW ENTER LOCK
+0155a0 lock_pic.bin
+0155b0 [BOOT] WILL ENTER STUB
+0155c8 boot_pic.bin
+0155d8 [BOOT] fwinfo.bin crc err
+0155f4 fwinfo.bin
+015600 [BOOT] usb_print fwinfo.bin crc err
+015628 syscfg.sys
+015634 sm.drv
+01563c mfp_cfg.bin
+015648 gpio_cfg.bin
+015658 [BOOT] disp_inited_in_boot=%d
+015678 [BOOT] enter shutoff
+015690 lpow_pic.bin
+0156a0 [BOOT] show low pwer pic
+0156bc upg_pic.bin
+0156c8 [BOOT] load UPGLOADER_INDEX err
+0156ec [BOOT] cfg boot2kernel_info.init_param.usb_print=%d
+015724 [BOOT] atf check boot2kernel_info.init_param.usb_print=%d
+015760 [BOOT] copy param for kernel, and go...
+01578c [BOOT] NULL2
+01579c [BOOT] NULL3
+0157ac [BOOT] NULL3 id=%d
+0157c0 [BOOT] NULL4 id = %d
+0157d8 [BOOT] NULL1
+0157e8 [BOOT] check_sum old bin err
+015808 [BOOT] NULL3,old bin
+015820 [BOOT] NULL4
+015830 [BOOT] OLD NULL1
+015844 [BOOT] load UPGLOADER_INDEX
+015864 err_no = 0x00000000
+01587c brec_entry.c
+01588c [BOOT] %s %s %s %s %d
+0158a4 Jun  8 2012
+0158b0 14:58:27
+0158bc [BOOT] %s %s
+0158cc [BOOT] boot_size = %d
+0158e4 [BOOT] nand inithw ok
+0158fc [BOOT] nand boot's page size 0x%x in sectors
+01592c [BOOT] load NAND_RR_INDEX err
+01594c [BOOT] upg success, reset
+015968 [BOOT] upg err %d
+015980 failed gzclose
+015994 1.2.3
+0159a0 invalid literal/length code
+0159bc invalid distance code
+0159d4 invalid distance too far back
+0159f4 invalid literal/lengths set
+015a10 incorrect length check
+015a28 invalid stored block lengths
+015a48 header crc mismatch
+015a5c invalid code lengths set
+015a78 incorrect data check
+015a90 too many length or distance symbols
+015ab4 unknown compression method
+015ad0 incorrect header check
+015ae8 invalid window size
+015afc unknown header flags set
+015b18 invalid distances set
+015b30 invalid bit length repeat
+015b4c invalid block type
+015b60 [BOOT] %d,restore_zlf:%s
+015b80 [BOOT] %d,fwrite:%d
+015b98 <none>
+015ba0 <corrupt>
+015bac __bcomprtab
+015bb8 [BOOT] %d,fwrite:%d, segment align
+015bdc [BOOT] %d,ftell:%d
+015bf0 [BOOT] sh_addr_align:%d
+015c0c __chksum
+015c24 need dictionary
+015c34 stream end
+015c40 file error
+015c4c stream error
+015c5c data error
+015c68 insufficient memory
+015c7c buffer error
+015c8c incompatible version
+015ca4 something wrong, enter shutoff
+015cc4 err_pic.bin
+015cd0 printbuf overflow!
+015ce4 dump_mem: not support mode
+015d00 dump_mem: startaddr must be align by %d bytes!
+015d30 startaddr %p, size %d, count %d, count_per_line %d
+015d65 %08x: 
+015d6c %04x 
+015d74 %08x 
+015d7c %02x 
+015d84 0123456789abcdefghijklmnopqrstuvwxyz
+015dac 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+015dd4 <NULL>

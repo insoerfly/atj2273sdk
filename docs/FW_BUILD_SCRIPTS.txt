@@ -1,0 +1,224 @@
+
+===== ExSymbol Type=2 Name=BDIR_t
+Parent=BOOT(DWORD subtype , BYTE nandflash_is_sb , BYTE need_rr_flag , MFILE rrtable)
+STRUCT BDIR_t {BYTE filename[12] ; BYTE type ; BYTE Reserved[3] ; DWORD DownLoadAdress ; DWORD offset ; DWORD length ; DWORD checksum ; }
+
+===== ExSymbol Type=2 Name=B_DIR
+Parent=BOOT(DWORD subtype , BYTE nandflash_is_sb , BYTE need_rr_flag , MFILE rrtable)
+STRUCT B_DIR {BDIR_t BDIR[32] ; }
+
+===== ExSymbol Type=1 Name=FBOOT
+Parent=BOOT(DWORD subtype , BYTE nandflash_is_sb , BYTE need_rr_flag , MFILE rrtable)
+FILE_ITEM FBOOT {mbrcfile ;  B_dirs ;  bFile[0...TotleCount] ;  ORG 500  DWORD ID1 = 1114923841 ; ORG 504  DWORD ID2 = 1437232498 ; ORG 508  DWORD mbrcchecksum ; ORG FileLength - 2  WORD secstagechecksum ; ORG FileLength + 1024 - 12  DWORD dirschecksum ; ORG FileLength + 1024 - 8  DWORD BrecFileLength ; ORG FileLength + 1024 - 4  DWORD brecchecksum ; }
+
+===== ExSymbol Type=2 Name=fw_file_name
+Parent=CALLBACK( )
+STRUCT fw_file_name {BYTE filename[13] ; }
+
+===== ExSymbol Type=2 Name=ATAR_HEAD_t
+Parent=LFI(BYTE TOOL_TYPE , BYTE SCODE_TYPE)
+STRUCT ATAR_HEAD_t {BYTE MAGIC[4] ; DWORD COUNT ; DWORD DIRchecksum ; BYTE reserve1[4] ; }
+
+===== ExSymbol Type=2 Name=ATAR_DIR_t
+Parent=LFI(BYTE TOOL_TYPE , BYTE SCODE_TYPE)
+STRUCT ATAR_DIR_t {BYTE name[128] ; BYTE type ; DWORD mtime ; BYTE reserve2[11] ; DWORD file_offset ; BYTE reserve3[4] ; DWORD length ; DWORD FILEchecksum ; }
+
+===== ExSymbol Type=2 Name=apm_header_t
+Parent=LFI(BYTE TOOL_TYPE , BYTE SCODE_TYPE)
+STRUCT apm_header_t {BYTE magic[4] = "apm" ; DWORD len = 512 ; BYTE total_padding[20] ; DWORD CKSUM = 0 ; BYTE PLF_VERSION[13] ; BYTE plf_padding[51] ; BYTE TYPEFLAG ; BYTE PATH[100] ; BYTE UID[8] ; BYTE VERSION[13] ; BYTE LANGUAGE ; BYTE padding[512 - 32 - 64 - 123] ; }
+
+===== ExSymbol Type=2 Name=ApmPath_t
+Parent=LFI(BYTE TOOL_TYPE , BYTE SCODE_TYPE)
+STRUCT ApmPath_t {BYTE ApmPath[512] ; }
+
+===== ExSymbol Type=2 Name=LDIR_t
+Parent=LFI(BYTE TOOL_TYPE , BYTE SCODE_TYPE)
+STRUCT LDIR_t {BYTE filename[11] ; BYTE attr ; DWORD orisize ; DWORD offset ; DWORD length ; DWORD actuallen ; DWORD checksum ; }
+
+===== ExSymbol Type=2 Name=fw_file_name
+Parent=LFI(BYTE TOOL_TYPE , BYTE SCODE_TYPE)
+STRUCT fw_file_name {BYTE filename[12] ; }
+
+===== ExSymbol Type=2 Name=LFI_DIR
+Parent=LFI(BYTE TOOL_TYPE , BYTE SCODE_TYPE)
+STRUCT LFI_DIR {LDIR_t ldiritem[DIR_COUNT] ; }
+
+===== ExSymbol Type=1 Name=LFIimage
+Parent=LFI(BYTE TOOL_TYPE , BYTE SCODE_TYPE)
+FILE_ITEM LFIimage {lfi_head ;  lfi_dirs ;  lfi_files[0...total] ;  }
+
+===== ExSymbol Type=2 Name=CapInfo_t
+Parent=LFI_HEAD( )
+STRUCT CapInfo_t {DWORD Scodecap = __FileGetData(1 , sysinfoname , 128 , 4) ; DWORD Scodebakcap = __FileGetData(1 , sysinfoname , 132 , 4) ; DWORD Appinfocap = __FileGetData(1 , sysinfoname , 136 , 4) ; DWORD Certcap = __FileGetData(1 , sysinfoname , 140 , 4) ; DWORD Liccap = __FileGetData(1 , sysinfoname , 144 , 4) ; DWORD Dspcap = __FileGetData(1 , sysinfoname , 148 , 4) ; DWORD Ucodecap = __FileGetData(1 , sysinfoname , 152 , 4) ; DWORD Udiskcap = __FileGetData(1 , sysinfoname , 156 , 4) ; DWORD Logicalcap = __FileGetData(1 , sysinfoname , 160 , 4) ; DWORD AtuorunCap = __FileGetData(1 , sysinfoname , 164 , 4) ; DWORD reserved[2] ; }
+
+===== ExSymbol Type=2 Name=ComVar_t
+Parent=LFI_HEAD( )
+STRUCT ComVar_t {WORD magic = __FileGetData(1 , sysinfoname , 176 , 2) ; DWORD year = __FileGetData(1 , sysinfoname , 178 , 4) ; BYTE month = __FileGetData(1 , sysinfoname , 182 , 1) ; BYTE day = __FileGetData(1 , sysinfoname , 183 , 1) ; BYTE hour = __FileGetData(1 , sysinfoname , 184 , 1) ; BYTE minute = __FileGetData(1 , sysinfoname , 185 , 1) ; BYTE time_format = __FileGetData(1 , sysinfoname , 186 , 1) ; BYTE is_display_time_on_heard_bar = __FileGetData(1 , sysinfoname , 187 , 1) ; BYTE is_file_protected = __FileGetData(1 , sysinfoname , 188 , 1) ; BYTE reserved1[3] ; BYTE backlight_brightness = __FileGetData(1 , sysinfoname , 192 , 1) ; BYTE language_id = __FileGetData(1 , sysinfoname , 193 , 1) ; BYTE voice_volume = __FileGetData(1 , sysinfoname , 194 , 1) ; BYTE ReplayMode = __FileGetData(1 , sysinfoname , 195 , 1) ; BYTE BatteryType = __FileGetData(1 , sysinfoname , 196 , 1) ; BYTE Onlinedev = __FileGetData(1 , sysinfoname , 197 , 1) ; BYTE SuppCard = __FileGetData(1 , sysinfoname , 198 , 1) ; BYTE MTPFormatType = __FileGetData(1 , sysinfoname , 199 , 1) ; BYTE UdiskSerialNumFlag = __FileGetData(1 , sysinfoname , 200 , 1) ; DWORD drmTimeOff = __FileGetData(1 , sysinfoname , 201 , 4) ; BYTE powerOffFlag = __FileGetData(1 , sysinfoname , 205 , 1) ; BYTE hdsFlag = __FileGetData(1 , sysinfoname , 206 , 1) ; BYTE rtc_source = __FileGetData(1 , sysinfoname , 207 , 1) ; BYTE Version[32] = __FileGetData(1 , sysinfoname , 208 , 32) ; WORD sleep_time = __FileGetData(1 , sysinfoname , 240 , 2) ; WORD idle_time = __FileGetData(1 , sysinfoname , 242 , 2) ; WORD backlight_duration = __FileGetData(1 , sysinfoname , 244 , 2) ; BYTE reserved2[10] ; }
+
+===== ExSymbol Type=2 Name=LFIHead_t
+Parent=LFI_HEAD( )
+STRUCT LFIHead_t {DWORD LFIFlag = __FileGetData(1 , sysinfoname , 0 , 4) ; BYTE Reserve0[16] ; DWORD Date = __FileGetData(1 , sysinfoname , 20 , 4) ; WORD VID = __FileGetData(1 , sysinfoname , 24 , 2) ; WORD PID = __FileGetData(1 , sysinfoname , 26 , 2) ; DWORD DIRItemCheckSum ; BYTE OEMName[16] = __FileGetData(1 , sysinfoname , 32 , 16) ; BYTE Designer[16] = __FileGetData(1 , sysinfoname , 48 , 16) ; BYTE Productor[32] = __FileGetData(1 , sysinfoname , 64 , 32) ; BYTE DeviceName[32] = __FileGetData(1 , sysinfoname , 96 , 32) ; CapInfo_t CapInfo ; ComVar_t SysComVar ; BYTE UsbVendor[8] = __FileGetData(1 , sysinfoname , 256 , 8) ; BYTE UsbProductID[16] = __FileGetData(1 , sysinfoname , 264 , 16) ; BYTE UsbVersion[8] = __FileGetData(1 , sysinfoname , 280 , 8) ; BYTE inf_descriptorlen = 48 ; BYTE inf_descriptortype = 3 ; BYTE UsbSetupInfo[46] = __FileGetData(1 , sysinfoname , 290 , 46) ; BYTE asciilen1 ; BYTE Mtpmfrinfo[32] = __FileGetData(1 , sysinfoname , 337 , 32) ; BYTE asciilen2 ; BYTE Mtpprodinfo[32] = __FileGetData(1 , sysinfoname , 370 , 32) ; BYTE asciilen3 ; BYTE Mtpprodver[16] = __FileGetData(1 , sysinfoname , 403 , 16) ; BYTE asciilen4 ; BYTE Mtpprodsn[16] = __FileGetData(1 , sysinfoname , 420 , 16) ; WORD MtpVID = __FileGetData(1 , sysinfoname , 436 , 2) ; WORD MtpPID = __FileGetData(1 , sysinfoname , 438 , 2) ; BYTE IVersion[64] = __FileGetData(1 , sysinfoname , 440 , 64) ; BYTE Reserve2[6] ; WORD Headchecksum ; }
+
+===== ExSymbol Type=1 Name=LFIimage
+Parent=LFI_HEAD( )
+FILE_ITEM LFIimage {lfi_head ;  }
+
+===== ExSymbol Type=2 Name=ApmPath_t
+Parent=MAKE_HIDE_DISK( )
+STRUCT ApmPath_t {BYTE ApmPath[512] ; }
+
+===== ExSymbol Type=2 Name=sPath
+Parent=MAKE_HIDE_DISK( )
+STRUCT sPath {BYTE pbCfgPath[512] ; BYTE pbMakePath[512] ; BYTE pbFsPath[512] ; }
+
+===== ExSymbol Type=2 Name=AFI_DIR_t
+Parent=MakeFwImage( )
+STRUCT AFI_DIR_t {BYTE filename[11] ; BYTE type ; DWORD DownloadAddr ; DWORD offset ; DWORD length ; DWORD Subtype ; DWORD checksum ; }
+
+===== ExSymbol Type=2 Name=AFI_Head_t
+Parent=MakeFwImage( )
+STRUCT AFI_Head_t {BYTE afi_flag[4] = "AFI" ; WORD VID ; WORD PID ; DWORD version = 0 ; DWORD date = __GetCurrentDate( ) ; DWORD dLength = 0 ; DWORD dVersion = 0 ; BYTE reserved1[8] ; AFI_DIR_t afi_dirs[DIR_COUNT] ; BYTE reserved2[28] ; DWORD checksum ; }
+
+===== ExSymbol Type=2 Name=AFI_FILENAMES_T
+Parent=MakeFwImage( )
+STRUCT AFI_FILENAMES_T {BYTE filename[12] ; }
+
+===== ExSymbol Type=2 Name=FwuTail_t
+Parent=MakeFwImage( )
+STRUCT FwuTail_t {BYTE bLength = 1 ; BYTE bType = 7 ; BYTE Reserved1[14] ; DWORD dFwuChecksum ; DWORD dFlag = 1437226410 ; BYTE pbDescriptor[8] = "FwuTail" ; BYTE pbFwuCrcChecksum[32] ; BYTE Reserved2[444] ; DWORD dFwuTailChecksum ; }
+
+===== ExSymbol Type=1 Name=FWIMAGE
+Parent=MakeFwImage( )
+FILE_ITEM FWIMAGE {afi_head ;  afi_files[0...total] ;  }
+
+===== ExSymbol Type=1 Name=ENCRYPT_FWIMAGE
+Parent=MakeFwImage( )
+FILE_ITEM ENCRYPT_FWIMAGE {encrypt_fw_part_1 ;  fwutail ;  }
+
+===== ExSymbol Type=2 Name=CapInfoT
+Parent=NoyaAdfuProBatch( )
+STRUCT CapInfoT {DWORD Scodecap ; DWORD Scodebakcap ; DWORD Appinfocap ; DWORD Certcap ; DWORD Liccap ; DWORD Dspcap ; DWORD Ucodecap ; DWORD Udiskcap ; DWORD Logicalcap ; DWORD AtuorunCap ; DWORD Logicalpagecap ; DWORD reserved[1] ; }
+
+===== ExSymbol Type=2 Name=LfiHeadT
+Parent=NoyaAdfuProBatch( )
+STRUCT LfiHeadT {BYTE Rsrv1[128] ; CapInfoT CapInfo ; BYTE Rsrv2[336] ; }
+
+===== ExSymbol Type=2 Name=FwscInfoT
+Parent=NoyaAdfuProBatch( )
+STRUCT FwscInfoT {BYTE Rsrv1[22] ; WORD wFwStatus ; BYTE Rsrv2[68] ; WORD Brecsign ; WORD BrecCheckSum ; BYTE Rsrv3[48] ; }
+
+===== ExSymbol Type=2 Name=HwscInfoT
+Parent=NoyaAdfuProBatch( )
+STRUCT HwscInfoT {BYTE Rsrv1[14] ; DWORD BootDiskType ; BYTE Rsrv2[40] ; BYTE b_flashid[8] ; BYTE CENum ; BYTE Rsrv3[13] ; }
+
+===== ExSymbol Type=2 Name=DeviceInfoT
+Parent=NoyaAdfuProBatch( )
+STRUCT DeviceInfoT {BYTE CertificateInfoLength[2] ; BYTE ClockState ; BYTE Certificate_ID ; BYTE Device_ID[16] ; WORD SubOpcode[32] ; BYTE Reserved[191] ; BYTE TransMagic ; BYTE Device_Type ; BYTE ClockSupportFlag ; BYTE Reserved2[746] ; }
+
+===== ExSymbol Type=2 Name=ParamT
+Parent=NoyaAdfuProBatch( )
+STRUCT ParamT {BYTE Subcode ; BYTE Param0 ; BYTE Param1 ; BYTE Param2 ; DWORD dTransferLength ; DWORD Param3 ; BYTE Reserved2[3] ; }
+
+===== ExSymbol Type=2 Name=Adfu_system_info
+Parent=NoyaAdfuProBatch( )
+STRUCT Adfu_system_info {BYTE reserved_id ; BYTE company_id ; BYTE device_id[5] ; WORD pid ; BYTE brom_version ; BYTE reserved[8] ; }
+
+===== ExSymbol Type=2 Name=CapInfoT
+Parent=NoyaAdfuUpgrade( )
+STRUCT CapInfoT {DWORD Scodecap ; DWORD Scodebakcap ; DWORD Appinfocap ; DWORD Certcap ; DWORD Liccap ; DWORD Dspcap ; DWORD Ucodecap ; DWORD Udiskcap ; DWORD Logicalcap ; DWORD AtuorunCap ; DWORD reserved[2] ; }
+
+===== ExSymbol Type=2 Name=LfiHeadT
+Parent=NoyaAdfuUpgrade( )
+STRUCT LfiHeadT {BYTE Rsrv1[128] ; CapInfoT CapInfo ; BYTE Rsrv2[336] ; }
+
+===== ExSymbol Type=2 Name=FwscInfoT
+Parent=NoyaAdfuUpgrade( )
+STRUCT FwscInfoT {BYTE Rsrv1[22] ; WORD wFwStatus ; BYTE Rsrv2[68] ; WORD Brecsign ; WORD BrecCheckSum ; BYTE Rsrv3[48] ; }
+
+===== ExSymbol Type=2 Name=HwscInfoT
+Parent=NoyaAdfuUpgrade( )
+STRUCT HwscInfoT {BYTE Rsrv1[14] ; DWORD BootDiskType ; BYTE Rsrv2[40] ; BYTE b_flashid[8] ; BYTE CENum ; BYTE Rsrv3[13] ; }
+
+===== ExSymbol Type=2 Name=DeviceInfoT
+Parent=NoyaAdfuUpgrade( )
+STRUCT DeviceInfoT {BYTE CertificateInfoLength[2] ; BYTE ClockState ; BYTE Certificate_ID ; BYTE Device_ID[16] ; WORD SubOpcode[32] ; BYTE Reserved[191] ; BYTE TransMagic ; BYTE Device_Type ; BYTE ClockSupportFlag ; BYTE Reserved2[746] ; }
+
+===== ExSymbol Type=2 Name=ParamT
+Parent=NoyaAdfuUpgrade( )
+STRUCT ParamT {BYTE Subcode ; BYTE Param0 ; BYTE Param1 ; BYTE Param2 ; DWORD dTransferLength ; DWORD Param3 ; BYTE Reserved2[3] ; }
+
+===== ExSymbol Type=2 Name=CapInfoT
+Parent=NoyaUdiskProBatch( )
+STRUCT CapInfoT {DWORD Scodecap ; DWORD Scodebakcap ; DWORD Appinfocap ; DWORD Certcap ; DWORD Liccap ; DWORD Dspcap ; DWORD Ucodecap ; DWORD Udiskcap ; DWORD Logicalcap ; DWORD AtuorunCap ; DWORD reserved[2] ; }
+
+===== ExSymbol Type=2 Name=LfiHeadT
+Parent=NoyaUdiskProBatch( )
+STRUCT LfiHeadT {BYTE Rsrv1[128] ; CapInfoT CapInfo ; BYTE Rsrv2[336] ; }
+
+===== ExSymbol Type=2 Name=FwscInfoT
+Parent=NoyaUdiskProBatch( )
+STRUCT FwscInfoT {BYTE Rsrv1[22] ; WORD wFwStatus ; BYTE Rsrv2[68] ; WORD Brecsign ; WORD BrecCheckSum ; BYTE Rsrv3[48] ; }
+
+===== ExSymbol Type=2 Name=HwscInfoT
+Parent=NoyaUdiskProBatch( )
+STRUCT HwscInfoT {BYTE Rsrv1[14] ; DWORD BootDiskType ; BYTE Rsrv2[62] ; }
+
+===== ExSymbol Type=2 Name=DeviceInfoT
+Parent=NoyaUdiskProBatch( )
+STRUCT DeviceInfoT {BYTE CertificateInfoLength[2] ; BYTE ClockState ; BYTE Certificate_ID ; BYTE Device_ID[16] ; WORD SubOpcode[32] ; BYTE Reserved[191] ; BYTE TransMagic ; BYTE Device_Type ; BYTE ClockSupportFlag ; BYTE Reserved2[746] ; }
+
+===== ExSymbol Type=2 Name=AdfuSysInfoT
+Parent=NoyaUdiskProBatch( )
+STRUCT AdfuSysInfoT {BYTE Rsrv1[8] ; HwscInfoT adfu_hwscaninfo ; FwscInfoT adfu_fwscaninfo ; BYTE Rsrv2[24] ; }
+
+===== ExSymbol Type=2 Name=CapInfoT
+Parent=NoyaUdiskUpgrade( )
+STRUCT CapInfoT {DWORD Scodecap ; DWORD Scodebakcap ; DWORD Appinfocap ; DWORD Certcap ; DWORD Liccap ; DWORD Dspcap ; DWORD Ucodecap ; DWORD Udiskcap ; DWORD Logicalcap ; DWORD AtuorunCap ; DWORD reserved[2] ; }
+
+===== ExSymbol Type=2 Name=LfiHeadT
+Parent=NoyaUdiskUpgrade( )
+STRUCT LfiHeadT {BYTE Rsrv1[128] ; CapInfoT CapInfo ; BYTE Rsrv2[336] ; }
+
+===== ExSymbol Type=2 Name=FwscInfoT
+Parent=NoyaUdiskUpgrade( )
+STRUCT FwscInfoT {BYTE Rsrv1[22] ; WORD wFwStatus ; BYTE Rsrv2[68] ; WORD Brecsign ; WORD BrecCheckSum ; BYTE Rsrv3[48] ; }
+
+===== ExSymbol Type=2 Name=HwscInfoT
+Parent=NoyaUdiskUpgrade( )
+STRUCT HwscInfoT {BYTE Rsrv1[14] ; DWORD BootDiskType ; BYTE Rsrv2[62] ; }
+
+===== ExSymbol Type=2 Name=DeviceInfoT
+Parent=NoyaUdiskUpgrade( )
+STRUCT DeviceInfoT {BYTE CertificateInfoLength[2] ; BYTE ClockState ; BYTE Certificate_ID ; BYTE Device_ID[16] ; WORD SubOpcode[32] ; BYTE Reserved[191] ; BYTE TransMagic ; BYTE Device_Type ; BYTE ClockSupportFlag ; BYTE Reserved2[746] ; }
+
+===== ExSymbol Type=2 Name=AdfuSysInfoT
+Parent=NoyaUdiskUpgrade( )
+STRUCT AdfuSysInfoT {BYTE Rsrv1[8] ; HwscInfoT adfu_hwscaninfo ; FwscInfoT adfu_fwscaninfo ; BYTE Rsrv2[24] ; }
+
+===== ExSymbol Type=2 Name=sNFCHIPID_head
+Parent=STORCHIPID(BYTE pbStorID[8] , DWORD subtype)
+STRUCT sNFCHIPID_head {WORD w_length ; BYTE b_head_length ; BYTE b_type ; BYTE b_id_len ; BYTE b_infolen ; BYTE rsv1[16 - 6] ; BYTE merge_bitmap[16] ; BYTE rsv2[512 - 16 - 16] ; }
+
+===== ExSymbol Type=2 Name=sNFCHIPID_id
+Parent=STORCHIPID(BYTE pbStorID[8] , DWORD subtype)
+STRUCT sNFCHIPID_id {BYTE b_flashid[dFlashIDLen] ; BYTE rsrv1[b_chipid_len - dFlashIDLen - 1] ; BYTE b_flash_class ; BYTE rsrv2[sHead.b_infolen] ; }
+
+===== ExSymbol Type=2 Name=sNFRR_head
+Parent=STORRR(BYTE pbStorID[8] , DWORD subtype)
+STRUCT sNFRR_head {WORD WLength ; BYTE HeaderLengthInByte ; BYTE HeaderType ; WORD IdLength ; BYTE Version ; BYTE Rsv1[16 - 7] ; BYTE MergeBitMap[64] ; BYTE Rsv2[512 - 16 - 64] ; }
+
+===== ExSymbol Type=2 Name=sNFRR_id
+Parent=STORRR(BYTE pbStorID[8] , DWORD subtype)
+STRUCT sNFRR_id {BYTE b_flashid[dFlashIDLen] ; BYTE rsrv1[512 - 8] ; }
+
+===== ExSymbol Type=2 Name=FileName_t
+Parent=encrypt_file(BYTE pbKEYIn[12] , BYTE dstroot[128] , BYTE srcroot[128])
+STRUCT FileName_t {BYTE pbFileName[12] ; }
+
+===== ExSymbol Type=2 Name=SrcAttr_t
+Parent=encrypt_file(BYTE pbKEYIn[12] , BYTE dstroot[128] , BYTE srcroot[128])
+STRUCT SrcAttr_t {BYTE pbSrcPath[dPathMaxLen] ; BYTE pbSrcDateTime[dDateTimeLen] ; }
+
+===== ExSymbol Type=2 Name=DstPath_t
+Parent=encrypt_file(BYTE pbKEYIn[12] , BYTE dstroot[128] , BYTE srcroot[128])
+STRUCT DstPath_t {BYTE pbDstPath[dPathMaxLen] ; }
