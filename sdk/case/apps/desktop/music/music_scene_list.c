@@ -825,19 +825,19 @@ bool scene_list_rotation( void )
     {
         softkeyboard_load_style( g_scene_list->softkeyboard );
         softkeyboard_paint( g_scene_list->softkeyboard );
-    }
+    }
 
     if( g_scene_list->loadingbox != NULL )
     {
         loadingbox_load_style( g_scene_list->loadingbox );
         loadingbox_paint( g_scene_list->loadingbox );
-    }
+    }
 
     if( g_scene_list->msgbox != NULL )
     {
         msgbox_load_style( g_scene_list->msgbox );
         msgbox_paint( g_scene_list->msgbox );
-    }
+    }
  
     if ( ( g_scene_list->list != NULL ) && ( true == g_coverflow_mode ) )
     {

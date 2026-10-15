@@ -610,7 +610,7 @@ static void* _dsc_do_snapshot(void* arg )
     MMM_RET_JUDGE(result,0,"MMM_SET_CAPTURE_AREA !");
     #endif
 
-    s_snapshot_ret = false;
+    s_snapshot_ret = false;
     result = mmm_ie_cmd(camera_dsc_mhandle, MMM_SNAPSHOT, (unsigned int) NULL);
     print_info("af call mmm_snapshot \n");
     MMM_RET_JUDGE(result,0,"MMM_SNAPSHOT !");

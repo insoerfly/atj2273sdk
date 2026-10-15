@@ -64,10 +64,18 @@ reference/
 
 ## Быстрый старт (сборка)
 
-### 1. Тулчейн MIPS SDE
-Нужен `mipsel-sde-elf-gcc` (семейство **MIPS SDE**, вендорский `mipssde-6.06.01-20070420`, GCC 3.4.4).
-Он входил в `usdk227c`/`usdk213f`; альтернативы — MIPS SDE (Codescape) или самостоятельная сборка.
-Положите `mipsel-sde-elf-*` в `PATH` (или укажите `CROSS=`).
+> ✅ **Сборка проверена:** лаунчер собирается в `desktop.so` (ELF32 MIPS, entry `0x53000000`).
+> Полные инструкции и разбор ошибок — **[`docs/BUILDING.md`](docs/BUILDING.md)**.
+
+### 1. Host + тулчейн
+Сборка идёт на Linux/**WSL** (Ubuntu): нужны `make`, `find`, bash. Вендорский MIPS SDE
+(`sde-gcc`, GCC 3.4.4, из `usdk227c`/`usdk213f`) не распространяется свободно, поэтому
+используем дистрибутивный `mipsel-linux-gnu-gcc` + обёртки `sde-*`:
+```bash
+sudo bash tools/setup-toolchain.sh   # ставит mipsel-linux-gnu + создаёт /usr/local/bin/sde-*
+```
+Обёртка `sde-gcc` добавляет `-mno-abicalls -fno-pic -fno-stack-protector -fcommon` — без них
+старый SDK под новым GCC не соберётся. Исходники переведены в **LF** (`.gitattributes`).
 
 ### 2. Генерация API-обёрток
 ```sh

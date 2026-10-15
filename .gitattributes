@@ -1,0 +1,22 @@
+# Force LF for text files so the (Linux/WSL) build works out of the box.
+# Without this, CRLF breaks the vendored Makefiles ("missing separator").
+* text=auto eol=lf
+
+# Binary assets / prebuilt objects
+*.a       binary
+*.o       binary
+*.so      binary
+*.ko      binary
+*.exe     binary
+*.bin     binary
+*.drv     binary
+*.dsp     binary
+*.ttf     binary
+*.irf     binary
+*.hds     binary
+*.png     binary
+*.bmp     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.zip     binary
