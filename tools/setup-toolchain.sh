@@ -37,9 +37,11 @@ rm -f "$BINDIR"/sde-gcc "$BINDIR"/sde-ld "$BINDIR"/sde-objcopy "$BINDIR"/sde-obj
 #   -mno-abicalls -fno-pic   -> avoid R_MIPS_GOT16/CALL16 "relocation truncated" errors
 #   -fno-stack-protector     -> avoid undefined __stack_chk_guard/__stack_chk_fail
 #   -fcommon                 -> old headers use tentative (common) definitions
+#   -ffreestanding           -> use GCC's own <stdint.h> etc. instead of glibc's
+#                               (SDK is bare-metal; glibc headers conflict, e.g. in demo)
 cat > "$BINDIR/sde-gcc" <<EOF
 #!/bin/sh
-exec "$GCC_BIN" -mno-abicalls -fno-pic -fno-stack-protector -fcommon "\$@"
+exec "$GCC_BIN" -mno-abicalls -fno-pic -fno-stack-protector -fcommon -ffreestanding "\$@"
 EOF
 chmod +x "$BINDIR/sde-gcc"
 

@@ -1,5 +1,5 @@
 #include "calcul_play.h"
-#include "Float_simlib.h"
+#include "float_simlib.h"
 
 int stripleFloatPrecision(char *str, int num);
 static int isop(char c);
@@ -14,22 +14,22 @@ void dealInputError(int errNo)
         case ERR_DOUBLE_OPERATOR:
         break;
         case ERR_MISSING_OPERATOR:
-        //print_info(" È±ÉÙÔËËã·û\n");
+        //print_info(" È±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n");
         break;
         case ERR_MISSING_DECIAML:
-        //print_info("Ð¡ÊýµãºóÃæÐ¡Êý²¿·ÖÈ±Ê§\n");
+        //print_info("Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È±Ê§\n");
         break;
         case ERR_MSVALUE_NOT_VALID:
-        //print_info("¸ÃÖµÎÞ·¨·ÅÈë¼Ä´æÆ÷\n");
+        //print_info("ï¿½ï¿½Öµï¿½Þ·ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½\n");
         break;
         default:
-        //print_info("Î´Öª´íÎó\n");
+        //print_info("Î´Öªï¿½ï¿½ï¿½ï¿½\n");
         break;
     }
 }
 
-//¼ì²éÊäÈëµÄ±í´ïÊ½
-//Èç¹ûÎÞ´í£¬·µ»Ø1£¬·ñÔò·µ»Ø0
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½Ê½
+//ï¿½ï¿½ï¿½ï¿½Þ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½0
 int expressionCheck(char *expstr)
 {
     int idx = 0;
@@ -44,7 +44,7 @@ int expressionCheck(char *expstr)
 
     memset(dststr, 0, sizeof(dststr));
     p = expstr;
-    //ÏÈ³ýÈ¥ËùÓÐ¿Õ°××Ö·û
+    //ï¿½È³ï¿½È¥ï¿½ï¿½ï¿½Ð¿Õ°ï¿½ï¿½Ö·ï¿½
     c = *p;
     while (c != '\0')
     {
@@ -56,9 +56,9 @@ int expressionCheck(char *expstr)
         p++;
         c = *p;
     }
-    //É¨ÃèÓÐÎÞÓï·¨´íÎó
+    //É¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï·¨ï¿½ï¿½ï¿½ï¿½
 
-    //È¥³ý¶àÓÚÐ¡ÊýÎ»Êý£¬×î¶àÖ»ÄÜ±£ÁôÈýÎ»
+    //È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½Ü±ï¿½ï¿½ï¿½ï¿½ï¿½Î»
     if(idx > MAX_STR_LEN)
     {
         return 0;	
@@ -70,7 +70,7 @@ int expressionCheck(char *expstr)
     stripleFloatPrecision(expstr, MAX_DECIMAL_LEN);
     //print_info("after expresssion check:  %s \n", expstr);
 
-    if (maxNumberCheck(expstr) == 0) //±í´ïÊ½´íÎó
+    if (maxNumberCheck(expstr) == 0) //ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
     {
         return 0;
     }
@@ -82,7 +82,7 @@ int expressionCheck(char *expstr)
 
 /**
  *
- *¼ì²é±í´ïÊ½£¬¶ÔÓÚÐ¡ÊýµãºóÐ¡Êý³¬¹ý7Î»µÄ½Ø¶Ï
+ *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½7Î»ï¿½Ä½Ø¶ï¿½
  */
 int stripleFloatPrecision(char *str, int num)
 {
@@ -92,7 +92,7 @@ int stripleFloatPrecision(char *str, int num)
     char c;
     char modifiedFlag = 0;
     int count = 0;
-    char afterDecimal = 0; //Óöµ½ÁËÐ¡Êýµã
+    char afterDecimal = 0; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
 
     c = *p;
     while (c != '\0')
@@ -106,7 +106,7 @@ int stripleFloatPrecision(char *str, int num)
             goto c_p_add;
         }
         
-        if (afterDecimal == 1) //¶ÔÐ¡ÊýµãºóÕûÊý¸öÊý¼ÆÊý
+        if (afterDecimal == 1) //ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         {
             if ((c == '0') || (c == '1') || (c == '2') || (c == '3') || (c == '4') ||  
                 (c == '5') || (c == '6') || (c == '7') || (c == '8') || (c == '9') 
@@ -144,7 +144,7 @@ int stripleFloatPrecision(char *str, int num)
             }
             *p = '\0';
             
-            //»Ö¸´p
+            //ï¿½Ö¸ï¿½p
             p = tmpP;
             afterDecimal = 0;
             count = 0;
@@ -162,8 +162,8 @@ int stripleFloatPrecision(char *str, int num)
 
 /**
  *
- *  ¼ì²éÓÐÎÞ³¬³ö¼ÆËã·¶Î§µÄÊý£¬Èç¹ûÓÐ£¬·µ»Ø0
- *  Ã»ÓÐÔò·µ»Ø1
+ *  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã·¶Î§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½0
+ *  Ã»ï¿½ï¿½ï¿½ò·µ»ï¿½1
  *
  */
 int maxNumberCheck(const char *expstr)
@@ -217,7 +217,7 @@ int maxNumberCheck(const char *expstr)
     }
 }
 
-//Èç¹ûÊÇÔËËã·û£¬·µ»Ø1
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1
 static int isop(char c)
 {
     if ((c == '+') || (c == '-') || (c == '*') || (c == '/'))

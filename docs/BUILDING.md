@@ -66,14 +66,20 @@ make -C sdk/case/makefile libs      # собрать библиотеки + laun
 | `multiple definition of pthread_mutex_type_t` и т.п. | Старые заголовки используют common-символы; GCC≥10 `-fno-common` | `-fcommon` |
 | `Makefile:NN: *** missing separator` | Файлы в CRLF | перевести в LF |
 | `linking abicalls files with non-abicalls files` (warning) | то же (abicalls) | `-mno-abicalls` |
-| `sde-ld: libX.a: error adding symbols: bad value` (напр. `coverflow.a` у `music`) | старые объекты в `.a` не принимаются новым `ld` | `bash tools/normalize-archives.sh` (в репо уже применено) |
+| `sde-ld: libX.a: error adding symbols: bad value` (`coverflow.a` у `music`, `jbook.a` у `ebook`) | старые объекты в `.a` не принимаются новым `ld` | `bash tools/normalize-archives.sh` (в репо уже применено к `coverflow.a`, `jbook.a`) |
+| ошибка в `utest/setjmp.h` / конфликт типов в `demo` | подтягивается glibc-`<stdint.h>` (SDK — bare-metal) | `-ffreestanding` (уже в `sde-gcc` shim) |
 
-**Статус сборки (проверено из чистого клона на Ubuntu 24.04, `mipsel-linux-gnu-gcc` 12.4 / `ld` 2.42):**
+**Статус сборки (проверено из чистого клона на Ubuntu 24.04, `mipsel-linux-gnu-gcc` 12.4 / `ld` 2.42,
+`-mno-abicalls -fno-pic -fno-stack-protector -fcommon -ffreestanding`):**
 
-- OK: `libsrc/{applib,style,fusion,loop}`, `apps/{commonui,msg_server,config,process_manager,usb}`,
-  `apps/desktop/{launcher,setting,music,stopwatch,recorder,photo}` — собираются.
-- В репозитории вендорские `.a` уже нормализованы (`tools/normalize-archives.sh`), чтобы
-  `ld` принимал их и `music` линковался.
+- Собираются **все** цели `case/`: `libsrc/{applib,style,fusion,loop}`,
+  `apps/{commonui,msg_server,config,process_manager,usb}`,
+  `apps/desktop/{launcher,launcher/*,setting,music,ebook,demo,stopwatch,recorder,photo,radio,
+  video,tvin,calculator,calendar,emulator,camera,browser,animation_*,plist_generate}`,
+  `apps/engine/{fm_engine,music_engine}`.
+- `sdk/psp_rel/lib/{coverflow.a,jbook.a}` уже нормализованы (`tools/normalize-archives.sh`).
+- `.a` с дублирующимися именами членов (напр. `mtpapi.a`) трогать нельзя — скрипт их пропускает.
+
 
 ## 5. Сборка образа и прошивка (справочно)
 

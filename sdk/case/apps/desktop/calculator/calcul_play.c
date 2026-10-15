@@ -10,7 +10,7 @@
  ********************************************************************************/
 /*!
  * \file     calclul_play.c
- * \brief    calculator ¼ÆËãÆ÷µÄÊµÏÖºÍ°´¼ü¿ØÖÆ
+ * \brief    calculator ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ÖºÍ°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * \author   dupengcheng
  *
  * \version 1.0
@@ -19,26 +19,26 @@
 #include "calcul_play.h"
 #include "calcul_scene.h"
 #include "BigInteger.h"
-#include "Float_simlib.h"
+#include "float_simlib.h"
 #include "calcul_ui.h"
 #include "calculErrProcess.h"
 #include "calc_expr.h"
 
 
 
-/*                 ¼ÆËãÆ÷Ó¦ÓÃ¸÷ÎÄ¼þµÄËµÃ÷
+/*                 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã¸ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ëµï¿½ï¿½
  ******************************************************************
- *                  ¼ÆËãÆ÷Ó¦ÓÃ¸÷ÎÄ¼þµÄËµÃ÷
- * float_smlib.c : Ä£Äâ¸¡µãÔËËã
- * BigIntege.c   : ¶¨Òå´óÕûÊýÔËËã
- * cal_expr.c    : ±í´ïÊ½µÄ´¦ÀíºÍÊµÏÖ[ÓÃÓÚÀ©Õ¹]
- * calculErrProcess: ´íÎó´¦ÀíºÍÐÅÏ¢
- *######[ÒÔÉÏµÄ¼¸¸öÎÄ¼þºÍUI¡¢ÏµÍ³Æ½Ì¨ÎÞ¹Ø£¬¿ÉÒÔµ±×÷¿â£¬±ãÓÚÒÆÖ²]####
+ *                  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã¸ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ëµï¿½ï¿½
+ * float_smlib.c : Ä£ï¿½â¸¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * BigIntege.c   : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * cal_expr.c    : ï¿½ï¿½ï¿½ï¿½Ê½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹]
+ * calculErrProcess: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+ *######[ï¿½ï¿½ï¿½ÏµÄ¼ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½UIï¿½ï¿½ÏµÍ³Æ½Ì¨ï¿½Þ¹Ø£ï¿½ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²]####
  *
- * calcul_ui.c   : UI »æÍ¼Ïà¹Ø
- * calcul_play.c : °´¼ü´¦ÀíºÍ¶ÔÉÏÃæ¸÷¸öÄ£¿éµÄ×é×°£¬ÊµÏÖ¼ÆËãÆ÷¹¦ÄÜ.
- * calcul_main.c : Ó¦ÓÃÈë¿Ú¡¢ÍË³ö
- * calcul_scene.c: ¼ÆËãÆ÷³¡¾°Ïà¹Øº¯Êý
+ * calcul_ui.c   : UI ï¿½ï¿½Í¼ï¿½ï¿½ï¿½
+ * calcul_play.c : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½Êµï¿½Ö¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+ * calcul_main.c : Ó¦ï¿½ï¿½ï¿½ï¿½Ú¡ï¿½ï¿½Ë³ï¿½
+ * calcul_scene.c: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½
  ******************************************************************
  */
 
@@ -49,30 +49,30 @@
 #define MAXROW 5
 #define MAX_SUPPORT_LEN  MAX_STR_LEN
 
-/* ÄÚ²¿¾²Ì¬Êý¾ÝÇø*/
+/* ï¿½Ú²ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 static char s_errStr[4][48] =
 { "Divided by zero", "Out of range", "Cannot apply SQRT to negative", "Expression too long" };
-/* µ±Ç°ÐÐ/ÁÐ */
+/* ï¿½ï¿½Ç°ï¿½ï¿½/ï¿½ï¿½ */
 static int s_curRow = 0;
 static int s_curCol = 0;
 static int s_curKey = CAL_NULL;
-/*ÏÈÇ°½¹µãµÄ¼ü */
+/*ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ */
 static int s_oldKey;
-/* memory ÖÐÊÇ·ñÓÐÊý¾Ý */
+/* memory ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 static char s_mes_mValueExist = 0;
 static char s_inputStr[640];
 static char s_dispStr[640];
-static char s_inputStatus; /*ÊäÈë×´Ì¬*/
-/* ¿ÉÄÜÖµÎª1, 2, 3, ·Ö±ð¶ÔÓÚ±í´ïÊ½ÊäÈëÊ±ÄÜ·ñÊäÈëÐ¡Êýµã */
+static char s_inputStatus; /*ï¿½ï¿½ï¿½ï¿½×´Ì¬*/
+/* ï¿½ï¿½ï¿½ï¿½ÖµÎª1, 2, 3, ï¿½Ö±ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ */
 static char s_hasMeetDecimal = 0;
-/* ¼ÆËã»úµÄ¼Ä´æÆ÷Öµ,ÓÃÓÚMR,MS,MC,M+,M- */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼Ä´ï¿½ï¿½ï¿½Öµ,ï¿½ï¿½ï¿½ï¿½MR,MS,MC,M+,M- */
 static float_type s_mValue;
 
 
 static void _dealDigitalKey(int key);
 static int _dealFunctionKey(int key);
 static void _dealOperandKey(void);
-static void _dealZeroSub(void); //Õý¸ºÊý·´ºÅ
+static void _dealZeroSub(void); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 static void _dealFloatZeroDisplay(char *str);
 static void _dealZeroDisplay(char *str);
 static void _onBackSpace(void);
@@ -93,7 +93,7 @@ static void _miscellousCheck(void);
 
 
 /*
- ±äÁ¿³õÊ¼»¯
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
  */
 void calcul_init(void)
 {
@@ -112,7 +112,7 @@ void calcul_init(void)
 }
 
 /*
- »ñÈ¡Êý×Ö¼ü´ú±íµÄ×Ö·û
+ ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½
  */
 static int _getDigitKeyStr(int cal_key_id)
 {
@@ -185,9 +185,9 @@ static inline void _resets_inputString(void)
 /*!\cond CALCULATOR*/
 /******************************************************************************/
 /*!
- * \par  Description: °´¼ü´¦Àíº¯Êý£¬²»Í¬µÄ°´¼ü½øÈë²»Í¬µÄ°´¼ü´¦Àí×Ó³ÌÐò
- * \param[in]   my_scene: ³¡¾°½á¹¹Ìå
- * \param[in]   str:  °´¼üÃû³ÆË÷Òý
+ * \par  Description: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë²»Í¬ï¿½Ä°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½
+ * \param[in]   my_scene: ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
+ * \param[in]   str:  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * \param[out]  none
  * \return       the result
  * \retval
@@ -200,10 +200,10 @@ static inline void _resets_inputString(void)
  *******************************************************************************/
 
 /*
- °´¼üÔÚÒÆ¶¯Ê±¶¼Òª×öÒ»ÏÂ´¦Àí:
- 1) °´¼üËùÔÚµÄÐÐÁÐÊÇ·ñÕýÈ·µÄÅÐ¶Ï,²¢È¡µÃÐÂÎ»ÖÃµÄ¼üË÷ÒýÖµ
- 2) ²Á³ýÏÈÇ°µÄ½¹µã¼ü
- 3) »­µ±Ç°µÄ½¹µã¼ü
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½Ê±ï¿½ï¿½Òªï¿½ï¿½Ò»ï¿½Â´ï¿½ï¿½ï¿½:
+ 1) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½Ð¶ï¿½,ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Î»ï¿½ÃµÄ¼ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+ 2) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ä½ï¿½ï¿½ï¿½ï¿½
+ 3) ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ä½ï¿½ï¿½ï¿½ï¿½
  */
 static inline int _calcul_draw_keys(scene_calcul_t *my_scene)
 {
@@ -277,7 +277,7 @@ static void _calcul_key_ok(scene_calcul_t *my_scene)
         break;
 
         case CAL_CHG:
-        _dealZeroSub(); /* Õý¸ºÊý·´ºÅ */
+        _dealZeroSub(); /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
         break;
 
         default:
@@ -289,9 +289,9 @@ static void _calcul_key_ok(scene_calcul_t *my_scene)
 /*!\cond CALCULATOR*/
 /******************************************************************************/
 /*!
- * \par  Description: °´¼ü´¦Àíº¯Êý£¬²»Í¬µÄ°´¼ü½øÈë²»Í¬µÄ°´¼ü´¦Àí×Ó³ÌÐò
- * \param[in]   my_scene: ³¡¾°½á¹¹Ìå
- * \param[in]   str:  °´¼üÃû³ÆË÷Òý
+ * \par  Description: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë²»Í¬ï¿½Ä°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½
+ * \param[in]   my_scene: ï¿½ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
+ * \param[in]   str:  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * \param[out]  none
  * \return       the result
  * \retval
@@ -332,7 +332,7 @@ void calcul_key_manage(scene_calcul_t *my_scene, int key)
 }
 
 /**
- *     ´¦ÀíÊäÈëµÄÊý×ÖÈç:0,1,2,3,4,5,6,7,8,9,'.'
+ *     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:0,1,2,3,4,5,6,7,8,9,'.'
  **/
 static void _dealDigitalKey(int hardkey)
 {
@@ -347,9 +347,9 @@ static void _dealDigitalKey(int hardkey)
     key = _getDigitKeyStr(hardkey);
 
     switch (s_inputStatus)
-    //×´Ì¬±äÇ¨
+    //×´Ì¬ï¿½ï¿½Ç¨
     {
-        case WAIT_FOR_DECIMAL: //ÉÏ´ÎÊäÈëÁËÒ»¸öÐ¡Êýµã
+        case WAIT_FOR_DECIMAL: //ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
         if (key == '.')
         {
             print_err("error , double dot input! ");
@@ -363,7 +363,7 @@ static void _dealDigitalKey(int hardkey)
         s_inputStatus = INPUT_OPERATOR;
         break;
 
-        case INPUT_OPERATOR: /* ÕýÔÚÊäÈë*/
+        case INPUT_OPERATOR: /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
         if (key == '.')
         {
             if ((s_hasMeetDecimal == 1) || (s_hasMeetDecimal == 2))
@@ -380,7 +380,7 @@ static void _dealDigitalKey(int hardkey)
         {
             s_inputStr[indx] = (char)key;
             indx++;
-            if (0 == maxNumberCheck(s_inputStr)) //´¦Àí²Ù×÷Êý¹ý´óµÄÎÊÌâ
+            if (0 == maxNumberCheck(s_inputStr)) //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             {
                 strcpy(s_inputStr, s_errStr[1]);
                 s_inputStatus = WAIT_FOR_OPERATOR;
@@ -395,10 +395,10 @@ static void _dealDigitalKey(int hardkey)
         }
         break;
 
-        case HAS_INPUT_A_OPERAND: /* ÉÏÒ»¸öÊäÈëÊÇÔËËã·û*/
+        case HAS_INPUT_A_OPERAND: /* ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
         if (key > 0)
         {
-            if (key != '.') //ÔËËã·ûºóÃæ²»ÄÜÖ±½Ó¸úÐ¡Êýµã
+            if (key != '.') //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ²»ï¿½ï¿½Ö±ï¿½Ó¸ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
             {
                 s_inputStr[indx] = (char)key;
                 indx++;
@@ -408,13 +408,13 @@ static void _dealDigitalKey(int hardkey)
         }
         break;
 
-        case WAIT_FOR_OPERATOR: //µÚÒ»´ÎÊäÈë
+        case WAIT_FOR_OPERATOR: //ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         s_hasMeetDecimal = 0;
         _resets_inputString();
         if (key == '.')
         {
 
-            //print_info("²»ÄÜÒÔÐ¡Êýµã¿ªÍ·");
+            //print_info("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ã¿ªÍ·");
             break;
         }
         if (key > 0)
@@ -434,8 +434,8 @@ static void _dealDigitalKey(int hardkey)
 }
 
 /**
- *     ´¦Àí¹¦ÄÜ¼üÈç: mc,mr,m+,m-,backspace,c,ce,sqrt,%,1/x,=
- *      ÕýÈ··µ»Ø1
+ *     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¼ï¿½ï¿½ï¿½: mc,mr,m+,m-,backspace,c,ce,sqrt,%,1/x,=
+ *      ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½1
  **/
 static int _dealFunctionKey(int key)
 {
@@ -469,13 +469,13 @@ static int _dealFunctionKey(int key)
 
             getStrFromFloat(s_inputStr, &result);
 
-            //printf("CAL_EQ ½á¹û %s \n", s_inputStr);
+            //printf("CAL_EQ ï¿½ï¿½ï¿½ %s \n", s_inputStr);
 
-            _dealFloatZeroDisplay(s_inputStr); //³ýÈ¥ÐÎÈç0.0
-            _dealZeroDisplay(s_inputStr); //³ýÈ¥ÐÎÈç-0
-            //printf("ZERO´¦Àíºó ½á¹û %s \n", s_inputStr);
+            _dealFloatZeroDisplay(s_inputStr); //ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½0.0
+            _dealZeroDisplay(s_inputStr); //ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½-0
+            //printf("ZEROï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ %s \n", s_inputStr);
             
-            // ¼ì²é¼ÆËã½á¹ûÊÇ·ñ¹ý´ó
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
             if (maxNumberCheck(s_inputStr) == 0) 
             {
                 memset(s_inputStr, 0, sizeof(s_inputStr));
@@ -500,7 +500,7 @@ static int _dealFunctionKey(int key)
         {
             return 0;
         }
-        if (expressionCheck(s_inputStr) == 0) //¼ì²éÊÇ²»ÊÇÓÐÌ«´óµÄÊý
+        if (expressionCheck(s_inputStr) == 0) //ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½Ì«ï¿½ï¿½ï¿½ï¿½ï¿½
         {
             strcpy(s_inputStr, s_errStr[1]);
             s_inputStatus = WAIT_FOR_OPERATOR;
@@ -516,17 +516,17 @@ static int _dealFunctionKey(int key)
                 return 0;
             }
         }
-        if (result.bInteger.sbit == 0) //>0µÄÊý²ÅÄÜ¿ª·½
+        if (result.bInteger.sbit == 0) //>0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¿ï¿½ï¿½ï¿½
         {
             if (float_sqrt(&result, &retVal) == 1)
             {
                 memset(s_inputStr, 0, sizeof(s_inputStr));
                 getStrFromFloat(s_inputStr, &retVal);
-                _dealFloatZeroDisplay(s_inputStr); //³ýÈ¥ÐÎÈç0.0
-                _dealZeroDisplay(s_inputStr); //³ýÈ¥ÐÎÈç-0
+                _dealFloatZeroDisplay(s_inputStr); //ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½0.0
+                _dealZeroDisplay(s_inputStr); //ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½-0
                 s_inputStatus = HAS_CALCULATE_RESULT;
             }
-            else //ÊäÈëÊýÌ«´ó
+            else //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì«ï¿½ï¿½
             {
                 strcpy(s_inputStr, s_errStr[1]);
                 s_inputStatus = WAIT_FOR_OPERATOR;
@@ -581,8 +581,8 @@ static int _dealFunctionKey(int key)
         memset(s_inputStr, 0, sizeof(s_inputStr));
 
         getStrFromFloat(s_inputStr, &retVal);
-        _dealFloatZeroDisplay(s_inputStr); //³ýÈ¥ÐÎÈç0.0
-        _dealZeroDisplay(s_inputStr); //³ýÈ¥ÐÎÈç-0
+        _dealFloatZeroDisplay(s_inputStr); //ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½0.0
+        _dealZeroDisplay(s_inputStr); //ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½-0
 
         s_inputStatus = HAS_CALCULATE_RESULT;
         break;
@@ -593,14 +593,14 @@ static int _dealFunctionKey(int key)
         break;
 
         case CAL_C:
-        /* Çå³ýÊäÈë */
+        /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
         s_mes_mValueExist = 0;
         memset(&s_mValue, 0, sizeof(float_type));
         _resets_inputString();
         s_inputStatus = WAIT_FOR_OPERATOR;
         break;
 
-        case CAL_BACKSPACE: //ÍË¸ñ
+        case CAL_BACKSPACE: //ï¿½Ë¸ï¿½
         _onBackSpace();
         break;
 
@@ -672,7 +672,7 @@ static int _dealFunctionKey(int key)
         {
             if (_dealFunctionKey(CAL_EQU) == 1)
             {
-                //printf("MSÒª±£´æµÄÊý  =%s   \n", inputStr);
+                //printf("MSÒªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  =%s   \n", inputStr);
                 getFloatFromStr(s_inputStr, &s_mValue);
                 if (((s_inputStr[0] == '0') && (s_inputStr[1] == '\0')) || 
                     ((s_inputStr[0] == '-') && (s_inputStr[1] == '\0')) || 
@@ -742,7 +742,7 @@ static int _dealFunctionKey(int key)
             }
 
             _dealFunctionKey(CAL_EQU);
-            _dealFunctionKey(CAL_MS); //ÓÐ¿ÉÄÜ¸Ä±äs_mes_mValueExistµÄ±êÖ¾Î»
+            _dealFunctionKey(CAL_MS); //ï¿½Ð¿ï¿½ï¿½Ü¸Ä±ï¿½s_mes_mValueExistï¿½Ä±ï¿½Ö¾Î»
 
             memcpy(s_inputStr, tmp2, strlen(tmp2) + 1);
             s_inputStatus = HAS_CALCULATE_RESULT;
@@ -791,7 +791,7 @@ static int _dealFunctionKey(int key)
             }
 
             _dealFunctionKey(CAL_EQU);
-            _dealFunctionKey(CAL_MS); /* ÓÐ¿ÉÄÜ¸Ä±äs_mes_mValueExistµÄ±êÖ¾Î» */
+            _dealFunctionKey(CAL_MS); /* ï¿½Ð¿ï¿½ï¿½Ü¸Ä±ï¿½s_mes_mValueExistï¿½Ä±ï¿½Ö¾Î» */
 
             memcpy(s_inputStr, tmp3, strlen(tmp3) + 1);
             s_inputStatus = HAS_CALCULATE_RESULT;
@@ -821,7 +821,7 @@ static int _dealFunctionKey(int key)
 }
 
 /**
- *     ´¦Àí²Ù×÷·ûÈç: '+','-','*','/'
+ *     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: '+','-','*','/'
  **/
 static void _dealOperandKey(void)
 {
@@ -839,10 +839,10 @@ static void _dealOperandKey(void)
     key = (char)_getDigitKeyStr(s_curKey);
 
     switch (s_inputStatus)
-    /* ×´Ì¬±äÇ¨ */
+    /* ×´Ì¬ï¿½ï¿½Ç¨ */
     {
         case INPUT_OPERATOR:
-        if (maxNumberCheck(s_inputStr) == 0) /* ´¦Àí²Ù×÷Êý¹ý´óµÄÎÊÌâ */
+        if (maxNumberCheck(s_inputStr) == 0) /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
         {
             memset(s_inputStr, 0, sizeof(s_inputStr));
             strcpy(s_inputStr, s_errStr[1]);
@@ -855,7 +855,7 @@ static void _dealOperandKey(void)
             {
                 s_inputStr[indx] = key;
                 indx++;
-                if (s_hasMeetDecimal == 1) /* Èç¹ûÒÑ¾­ÊäÈëÒ»¸öÐ¡ÊýÔÙÊäÈëµÄÔËËã·û */
+                if (s_hasMeetDecimal == 1) /* ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
                 {
                     s_hasMeetDecimal = 2;
                 }
@@ -865,24 +865,24 @@ static void _dealOperandKey(void)
         break;
 
         case WAIT_FOR_DECIMAL:
-        //print_info("Ó¦¸ÃÊäÈëÐ¡Êý²¿·Ö£¬¶ø²»ÊÇÔËËã·û");
+        //print_info("Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
         break;
 
         case HAS_INPUT_A_OPERAND:
         if(indx > 1)
         {
             s_inputStr[indx - 1] = key;
-            //print_info("²»ÄÜÁ¬ÐøÊäÈëÁ½¸öÔËËã·û\n");
+            //print_info("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n");
         }
         break;
 
         case WAIT_FOR_OPERATOR:
         _resets_inputString();
-        //print_info("±í´ïÊ½²»ÄÜÒÔÔËËã·û¿ªÊ¼\n");
+        //print_info("ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼\n");
         break;
 
         case HAS_CALCULATE_RESULT:
-        if (maxNumberCheck(s_inputStr) == 0) /* ´¦Àí²Ù×÷Êý¹ý´óµÄÎÊÌâ */
+        if (maxNumberCheck(s_inputStr) == 0) /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
         {
             memset(s_inputStr, 0, sizeof(s_inputStr));
             strcpy(s_inputStr, s_errStr[1]);
@@ -905,7 +905,7 @@ static void _dealOperandKey(void)
 }
 
 /**
- *     Õý¸ºÊý·´ºÅ:'+/-'
+ *     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:'+/-'
  **/
 static void _dealZeroSub(void)
 {
@@ -913,7 +913,7 @@ static void _dealZeroSub(void)
 
     switch (s_inputStatus)
     {
-        case WAIT_FOR_OPERATOR: /*´ÓºóÏòÇ°ÕÒµ½µÚÒ»¸öÔËËã·û */
+        case WAIT_FOR_OPERATOR: /*ï¿½Óºï¿½ï¿½ï¿½Ç°ï¿½Òµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
         s_inputStr[0] = '-';
         s_inputStr[1] = '\0';
         s_inputStatus = INPUT_OPERATOR;
@@ -970,7 +970,7 @@ static void _dealZeroSub(void)
 }
 
 /*
- ** ³ýÈ¥ÐÎÈç0.0
+ ** ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½0.0
  */
 static void _dealFloatZeroDisplay(char *str)
 {
@@ -988,7 +988,7 @@ static void _dealFloatZeroDisplay(char *str)
 }
 
 /*
- **³ýÈ¥ÐÎÈç-0µÄÏÔÊ¾
+ **ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½-0ï¿½ï¿½ï¿½ï¿½Ê¾
  */
 static void _dealZeroDisplay(char *str)
 {
@@ -1001,7 +1001,7 @@ static void _dealZeroDisplay(char *str)
 }
 
 /*
- **ÍË¸ñ
+ **ï¿½Ë¸ï¿½
  */
 static void _onBackSpace(void)
 {
@@ -1016,7 +1016,7 @@ static void _onBackSpace(void)
 
         case INPUT_OPERATOR:
 
-        if (indx > 1) //·ÀÖ¹s_inputStrÎª¿ÕµÄÇé¿ö
+        if (indx > 1) //ï¿½ï¿½Ö¹s_inputStrÎªï¿½Õµï¿½ï¿½ï¿½ï¿½
         {
             if (s_inputStr[indx - 2] == '.')
             {
@@ -1039,7 +1039,7 @@ static void _onBackSpace(void)
             }
             s_inputStr[indx - 1] = '\0';
             
-            if ( (s_inputStr[0] == '-') && (indx == 2) ) //·ÀÖ¹¸ºÊý×îºó²»ÄÜÈ¥µô·ûºÅ
+            if ( (s_inputStr[0] == '-') && (indx == 2) ) //ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             {
                 s_inputStr[0] = '\0';	
             }
@@ -1053,7 +1053,7 @@ static void _onBackSpace(void)
 
         case HAS_INPUT_A_OPERAND:
 
-        if (indx > 1) //·ÀÖ¹s_inputStrÎª¿ÕµÄÇé¿ö
+        if (indx > 1) //ï¿½ï¿½Ö¹s_inputStrÎªï¿½Õµï¿½ï¿½ï¿½ï¿½
         {
 
             s_inputStr[indx - 1] = '\0';
@@ -1067,7 +1067,7 @@ static void _onBackSpace(void)
         break;
 
         case WAIT_FOR_DECIMAL:
-        if (indx > 1) //·ÀÖ¹s_inputStrÎª¿ÕµÄÇé¿ö
+        if (indx > 1) //ï¿½ï¿½Ö¹s_inputStrÎªï¿½Õµï¿½ï¿½ï¿½ï¿½
         {
             if (s_inputStr[indx - 1] == '.')
             {
@@ -1163,7 +1163,7 @@ static void _isDecimal(void)
 }
 
 /*
- *   ×î´óÔÊÐíÊäÈë±í´ïÊ½³¤¶È
+ *   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
  */
 static void _checkMaxStrlen(char * str)
 {
@@ -1176,8 +1176,8 @@ static void _checkMaxStrlen(char * str)
 }
 
 /*
- ** ÅÐ¶ÏÊäÈëµÄÊý×Ö´®Ç°ÃæÊÇ·ñÓÐ0£¬Èç¹ûÓÐÔòÈ¥µô0
- ** ÀýÈç£º°Ñ000012345 ±ä³É 12345
+ ** ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ç°ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½0
+ ** ï¿½ï¿½ï¿½ç£ºï¿½ï¿½000012345 ï¿½ï¿½ï¿½ 12345
  */
 static void _miscellousCheck(void)
 {
@@ -1188,7 +1188,7 @@ static void _miscellousCheck(void)
     memset(s_inputStr + len, 0, sizeof(s_inputStr) - (unsigned int)len);
     memset(s_dispStr, 0, sizeof(s_dispStr));
     //print_dbg("before _miscellousCheck= %s \n", s_inputStr);
-    while ((*(s_inputStr + i) == '0') && (*(s_inputStr + i + 1) != '.') //Èç¹ûinputStr=0
+    while ((*(s_inputStr + i) == '0') && (*(s_inputStr + i + 1) != '.') //ï¿½ï¿½ï¿½inputStr=0
         && (*(s_inputStr + i + 1) != '+') && (*(s_inputStr + i + 1) != '-') 
         && (*(s_inputStr + i + 1) != '*') && (*(s_inputStr + i + 1) != '/'))
     {
@@ -1216,8 +1216,8 @@ static void _miscellousCheck(void)
 
 static void _paintStringArea(scene_calcul_t *my_scene)
 {
-    exprValidate(s_inputStr); //±í´ïÊ½ºÏ·¨ÐÔ¼ì²é
-    _miscellousCheck(); //È¥µôÊý×Ö´®Ç°ÃæµÄÎÞÐ§¡®0¡¯
+    exprValidate(s_inputStr); //ï¿½ï¿½ï¿½ï¿½Ê½ï¿½Ï·ï¿½ï¿½Ô¼ï¿½ï¿½
+    _miscellousCheck(); //È¥ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½0ï¿½ï¿½
     _checkMaxStrlen(0);
     _copy_str();
     if (maxNumberCheck(s_dispStr) == 0)
@@ -1228,20 +1228,20 @@ static void _paintStringArea(scene_calcul_t *my_scene)
 }
 
 /*
- µ± rotate Ê±£¬Èç¹ûÓÐ¸ßÁÁµÄÍ¼Æ¬¡¢ÓÐ¼ÆËã½á¹û»òÖÐ¼äÖµ£¬¶¼Ðëpaint³öÀ´
+ ï¿½ï¿½ rotate Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½paintï¿½ï¿½ï¿½ï¿½
  */
 void paint_when_rotate(scene_calcul_t *my_scene)
 {
-    /* »­³öµ±Ç°¸ßÁÁÍ¼Æ¬ */
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ */
     if (s_curKey != CAL_NULL)
     {
         calcul_draw_key(my_scene, s_curKey);
     }
 
-    /* »­³öµ±Ç°¼ÆËã½á¹û»òÖÐ¼äÖµ */
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½Öµ */
     _paintStringArea(my_scene);
 
-    /* Èç¹ûÐý×ªÊ±£¬MemoryÖÐ´æ´¢Êý¾Ý£¬»­³ömemory±ê¼Ç */
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½×ªÊ±ï¿½ï¿½Memoryï¿½Ð´æ´¢ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½memoryï¿½ï¿½ï¿½ */
     if (s_mes_mValueExist == 1)
     {
         calcul_draw_mflag(my_scene);
