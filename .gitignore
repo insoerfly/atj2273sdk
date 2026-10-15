@@ -5,14 +5,15 @@ Desktop.ini
 *.swp
 *~
 
-# build outputs
-*.o
-*.obj
-*.elf
-*.map
-*.lst
-*.dep
+# NOTE: do NOT globally ignore *.o / *.a / *.elf here —
+# the vendored SDK ships prebuilt objects under sdk/psp_rel/lib
+# (crti.o, crtbegin.o, crtend.o, crtn.o, codec_common.o, mmm_api.o, ...)
+# that are required for linking.
+# Build outputs are simply not generated inside the repo tree during normal use.
+
+# transient build files
 *.d
+*.dep
 *.tmp
 
 # firmware / device dumps (not distributed here)
