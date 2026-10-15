@@ -44,6 +44,7 @@ docs/                # наш разбор прошивки и форматов
   ACTSDK.md          # разбор этого SDK (что внутри, как собирать)
   HARDWARE.md        # ATJ227X/ATJ2273x: ядро, карта регистров, key/LCD/clock (по даташиту)
   EMULATORS.md       # какие эмуляторы реальны на ATJ2273S (+ что уже в прошивке)
+  DOOM.md            # как собрать doomgeneric (.app): platform-слой, шимы SDK, сборка
   FINDINGS_app_abi.md# ABI приложений (.app), шифрование модулей
   FIRMWARE_NOTES.md  # заметки по прошивке (форматы .res/.sty/.str, desktop entry)
   FW_STRUCTS.txt     # структуры образов (LFIHead/LDIR/AFI/FWU)
