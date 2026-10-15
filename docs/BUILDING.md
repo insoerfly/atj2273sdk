@@ -1,7 +1,8 @@
 # BUILDING — как собрать приложение из этого SDK
 
-Проверено: **лаунчер (`sdk/case/apps/desktop/launcher/qvga_style_1`) собирается в `desktop.so`**
-(ELF32 LSB MIPS, entry `0x53000000`, flags `0x70001001, o32, mips32r2`).
+Проверено из **чистого клона**: собираются **все 37/37** целей `case/` (приложения, движки, библиотеки),
+лаунчер — в `desktop.so` (ELF32 LSB MIPS, entry `0x53000000`, flags `0x70001001, o32, mips32r2`).
+Быстрая полная проверка: `bash tools/build-all.sh`.
 
 Вендорский SDK рассчитан на **MIPS SDE** (`sde-gcc`, GCC 3.4.4) под Cygwin/Linux. Тулчейн SDE не
 распространяется свободно, поэтому используем дистрибутивный **`mipsel-linux-gnu-gcc`** и создаём
