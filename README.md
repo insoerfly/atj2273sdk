@@ -42,6 +42,7 @@ sdk/                 # Полный Actions SDK (USDK1100)
 docs/                # наш разбор прошивки и форматов
   STATUS.md          # подробный статус реверса (формат LFI, карта флеша, шифр, API)
   ACTSDK.md          # разбор этого SDK (что внутри, как собирать)
+  HARDWARE.md        # ATJ227X/ATJ2273x: ядро, карта регистров, key/LCD/clock (по даташиту)
   FINDINGS_app_abi.md# ABI приложений (.app), шифрование модулей
   FIRMWARE_NOTES.md  # заметки по прошивке (форматы .res/.sty/.str, desktop entry)
   FW_STRUCTS.txt     # структуры образов (LFIHead/LDIR/AFI/FWU)
@@ -58,6 +59,7 @@ tables/
 reference/
   actsemi/           # uli/actsemi: эталонная таблица AOS-сисколлов (actsemi.c/h)
   launcher_skeleton/ # наш каркас лаунчера (для примера)
+  atj227x/           # atj227x_regs.h — базы регистров ATJ227X (KSEG1 и т.п.)
 ```
 
 ---
